@@ -1,0 +1,180 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src:url('../fonts/IranSans/IRANSansWeb_Light.eot');
+    src: url('../fonts/IranSans/IRANSansWeb_Lightd41d.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../fonts/IranSans/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/IranSans/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IranSans/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: BYekan;
+    font-style: normal;
+    font-weight: bold;
+    src:url('../fonts/BYekan/BYekan.eot');
+    src: url('../fonts/BYekan/BYekan.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    /*url('../fonts/BYekan/BYekan.woff2') format('woff2'),  !* FF39+,Chrome36+, Opera24+*!*/
+    url('../fonts/BYekan/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BYekan/BYekan.ttf') format('truetype');
+}
+@font-face {
+    font-family: Vazir;
+    src: url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot');
+    src: url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot?#iefix') format('embedded-opentype'),
+    url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.woff') format('woff'),
+    url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+/* font-Koodakbold */
+@font-face {
+    font-family: Koodakbold;
+    src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot');
+    src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot?#iefix') format('embedded-opentype'),
+    url('http://fonts.codearena.ir/b/koodakbold/koodakbold.woff') format('woff'),
+    url('http://fonts.codearena.ir/b/koodakbold/koodakbold.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/********************************************
+**                                     ****
+********************************************/
+
+body {
+    font-size: 12px;
+    font-family: 'IRANSans'!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Koodakbold'!important;
+    font-weight: bolder;
+
+}
+p{
+    font-family: 'Vazir'!important;
+    font-size: 12px;
+    line-height: 26px;
+    color: #444;
+    margin-bottom: 0;
+}
+p img {
+    margin: 0;
+}
+
+/* links */
+
+a,
+a:visited {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    outline: 0;
+    font-family: 'BYekan', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+p a,
+p a:visited {
+    line-height: inherit;
+    outline: 0;
+}
+
+
+/* list */
+
+ul,
+ol {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+    margin-left: 0px;
+}
+
+ul.square {
+    list-style: square outside;
+}
+
+ul.circle {
+    list-style: circle outside;
+}
+
+ul.disc {
+    list-style: disc outside;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 0;
+}
+
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+    margin-bottom: 0px;
+}
+
+button {
+    cursor: pointer;
+    outline: none!important;
+    letter-spacing: 0;
+}
+
+/*
+--------------------------
+- Custom Typography
+--------------------------
+*/
+/* blockquote */
+blockquote{
+    padding: 60px;
+    position: relative;
+    background: #853BFA;
+}
+blockquote:before{
+    content: '\f10d';
+    font-family: fontawesome;
+    color: #fff;
+    font-size: 32px;
+    position: absolute;
+    left: 16px;
+    top: 46px;
+}
+blockquote p{
+    font-size: 13px;
+    color: #fff;
+}
+.blockquote-footer{
+    color: #fff;
+}
