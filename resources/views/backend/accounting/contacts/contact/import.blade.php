@@ -8,7 +8,7 @@
 		<div class="col-md-6">
 			<div class="card">
 				<div class="card-header bg-primary text-white">
-				   <h5 class="panel-title">{{ _lang('Import Contacts') }}</h5>
+				   <h5 class="panel-title">وارد کردن مخاطبین</h5>
 				</div>
 				<div class="card-body">
 					{{ csrf_field() }}
