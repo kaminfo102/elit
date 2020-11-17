@@ -160,7 +160,7 @@
 		<li class="nav-item"><a class="nav-link" href="{{ url('permission/control') }}">کنترل دسترسی</a></li>
 		<li class="nav-item"><a class="nav-link" href="{{ url('chart_of_accounts') }}">انواع درآمد و هزینه ها</a></li>
 		@if( has_feature('project_management_module') )
-			<li class="nav-item"><a class="nav-link" href="{{ url('company/crm_settings') }}">'CRM تنظیمات'</a></li>
+			<li class="nav-item"><a class="nav-link" href="{{ url('company/crm_settings') }}"> تنظیمات CRM</a></li>
 		@endif
 		<li class="nav-item"><a class="nav-link" href="{{ url('payment_methods') }}">روش پرداخت</a></li>
 		<li class="nav-item"><a class="nav-link" href="{{ url('product_units') }}">واحد کالا</a></li>
