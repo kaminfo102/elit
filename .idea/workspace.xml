@@ -21,6 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c166e375-9bd9-4670-ab1a-4316fb99c53c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backend/assets/css/default-css.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/assets/css/default-css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/login_asset/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/login_asset/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/membership/subscription_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/membership/subscription_details.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,6 +250,8 @@
       <workItem from="1605533362106" duration="2131000" />
       <workItem from="1605622902417" duration="3159000" />
       <workItem from="1605630278177" duration="941000" />
+      <workItem from="1605680800168" duration="4214000" />
+      <workItem from="1605707208174" duration="1917000" />
     </task>
     <servers />
   </component>
@@ -262,6 +268,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604509518287">

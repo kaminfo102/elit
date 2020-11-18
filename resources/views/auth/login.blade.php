@@ -1,13 +1,13 @@
 @extends('layouts.login')
 
 @section('content')
-<div class="container m-5">
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card card-signin my-5">
-                <div class="login-form-head">
+                {{--<div class="login-form-head">
                     <h4>ورود</h4>
-                </div>
+                </div>--}}
                 <div class="card-body">
 
                     @if(Session::has('error'))

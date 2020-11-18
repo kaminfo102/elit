@@ -12,7 +12,7 @@
 	    <table class="table table-bordered">
 			@if($user->user_type == 'user')
 				<tr><td>نام بسته</td><td>{{ $user->company->package->package_name }}</td></tr>
-				<tr><td>اعتبار بسته تا</td><td>{{ date($date_format, strtotime($user->company->valid_to)) }}</td></tr>
+				<tr><td>اعتبار بسته تا</td><td>{{ jdate($date_format, strtotime($user->company->valid_to)) }}</td></tr>
 		        <tr>
 		        	<td>نوع عضویت</td><td>{!! $user->company->membership_type == 'trial' ? clean(status(ucwords($user->company->membership_type), 'danger')) : clean(status(ucwords($user->company->membership_type), 'success')) !!}</td>
 		        </tr>
