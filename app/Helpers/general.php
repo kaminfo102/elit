@@ -98,6 +98,19 @@ if ( ! function_exists('get_last_message')){
 		 return '<p class="preview">'.'پیامی پیدا نشد'.'</p>';
 	}
 }
+if(! function_exists('get_business_name')){
+    function get_business_name()
+    {
+        $company_id=company_id();
+        $user_id=Auth::user()->id;
+        if(Auth::user()->user_type == 'user'){
+            /*$business_name = DB::select("SELECT as business_name FROM companies WHERE $user_id = $company_id");*/
+
+        }else{
+            return "No";
+        }
+    }
+}
 
 if ( ! function_exists('get_chat_order')){
 	function get_chat_order()
@@ -1224,16 +1237,16 @@ if( ! function_exists('get_invoice_templates') ){
     function get_invoice_templates(){
     	//Builtin Templates
     	$system_templates = array(
-            'classic' 		=> _lang('کلاسیک'),
-            'classic-red'   => _lang('کلاسیک قرمز'),
-            'modern'        => _lang('مدرن'),
-            'general'       => _lang('عمومی'),
+            'classic' 		=> 'کلاسیک',
+            'classic-red'   => 'کلاسیک قرمز',
+            'modern'        => 'مدرن',
+            'general'       => 'عمومی',
     	);
 
     	$templates = App\InvoiceTemplate::where('company_id',company_id())->get();
 
     	foreach($templates as $template){
-			$system_templates[$template->id] = $template->name .' (' . _lang('سفارشی') . ')';
+			$system_templates[$template->id] = $template->name .' (' . 'سفارشی' . ')';
     	}
 
     	return $system_templates;
@@ -1245,7 +1258,7 @@ if( ! function_exists('get_quotation_templates') ){
     function get_quotation_templates(){
     	//Builtin Templates
     	$system_templates = array(
-            'classic' 		=> _lang('کلاسیم'),
+            'classic' 		=> _lang('کلاسیک'),
             'classic-red'   => _lang('کلاسیک قرمز '),
             'modern'        => _lang('مدرن'),
             'general'       => _lang('عمومی'),

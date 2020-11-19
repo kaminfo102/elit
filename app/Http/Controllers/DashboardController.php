@@ -98,6 +98,7 @@ class DashboardController extends Controller
 			return view('backend/dashboard-'.$type,$data);
 		}else if( $type  == 'user' ){	
 			$company_id = company_id();
+
 			$data = array();
 			$data['current_month_income'] = current_month_income();
 			$data['current_month_expense'] = current_month_expense();
@@ -126,6 +127,7 @@ class DashboardController extends Controller
 			return view('backend/dashboard-'.$type,$data);
 		}else if($type  == 'staff' ){
 			$company_id = company_id();
+			$bussines = bussines_name();
 			$data = array();
 
             $project_status = \App\Project::join('project_members','projects.id','project_members.project_id')
@@ -178,7 +180,7 @@ class DashboardController extends Controller
 	
 	private function month_wise_income(){
 		$company_id = company_id();
-		$date = date("Y-m-d");
+		$date = jdate("Y-m-d");
 		$query = DB::select("SELECT m.month, IFNULL(SUM(transactions.base_amount),0) as amount 
 		FROM ( SELECT 1 AS MONTH UNION SELECT 2 AS MONTH UNION SELECT 3 AS MONTH UNION SELECT 4 AS MONTH 
 		UNION SELECT 5 AS MONTH UNION SELECT 6 AS MONTH UNION SELECT 7 AS MONTH UNION SELECT 8 AS MONTH 
@@ -190,7 +192,7 @@ class DashboardController extends Controller
 	
 	private function month_wise_expense(){
 		$company_id = company_id();
-		$date = date("Y-m-d");
+		$date = jdate("Y-m-d");
 		$query = DB::select("SELECT m.month, IFNULL(SUM(transactions.base_amount),0) as amount 
 		FROM ( SELECT 1 AS MONTH UNION SELECT 2 AS MONTH UNION SELECT 3 AS MONTH UNION SELECT 4 AS MONTH 
 		UNION SELECT 5 AS MONTH UNION SELECT 6 AS MONTH UNION SELECT 7 AS MONTH UNION SELECT 8 AS MONTH 
@@ -203,7 +205,7 @@ class DashboardController extends Controller
 
   private function current_month_income(){
      $company_id = company_id();
-	 $date = date("Y-m-d");
+	 $date = jdate("Y-m-d");
 	 $query = DB::select("SELECT IFNULL(SUM(base_amount),0) as amount FROM transactions WHERE dr_cr='cr' 
 	 AND trans_date BETWEEN ADDDATE(LAST_DAY(SUBDATE('$date', INTERVAL 1 MONTH)), 1) AND LAST_DAY('$date') 
 	 AND company_id='$company_id'"); 
@@ -213,7 +215,7 @@ class DashboardController extends Controller
 
   private function current_month_expense(){
 	 $company_id = company_id();
-	 $date = date("Y-m-d");
+	 $date = jdate("Y-m-d");
 	 $query =  DB::select("SELECT IFNULL(SUM(base_amount),0) as amount FROM transactions WHERE dr_cr='dr' 
 	 AND trans_date BETWEEN ADDDATE(LAST_DAY(SUBDATE('$date', INTERVAL 1 MONTH)), 1) AND LAST_DAY('$date') 
 	 AND company_id='$company_id'");

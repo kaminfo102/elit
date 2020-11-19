@@ -25,7 +25,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: "Raleway", sans-serif;
+    --font-family-sans-serif: "IranSans";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -36,8 +36,30 @@
     box-sizing: border-box
 }
 
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src:url('../../backend/assets/fonts/IranSans/IRANSansWeb_Light.eot');
+    src: url('../../backend/assets/fonts/IranSans/IRANSansWeb_Lightd41d.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../../backend/assets/fonts/IranSans/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../../backend/assets/fonts/IranSans/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../../backend/assets/fonts/IranSans/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans_Black;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../../backend/assets/fonts/font/eot/IRANSansWeb_Black.eot');
+    src: url('../../backend/assets/fonts/font/eot/IRANSansWeb_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../../backend/assets/fonts/font/woff2/IRANSansWeb_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../../backend/assets/fonts/font/woff/IRANSansWeb_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../../backend/assets/fonts/font/ttf/IRANSansWeb_Black.ttf') format('truetype');
+}
+
 html {
-    font-family: sans-serif;
+
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -65,7 +87,7 @@ section {
 
 body {
     margin: 0;
-    font-family: Raleway, sans-serif;
+    font-family: IRANSans_Black;
     font-size: .9rem;
     font-weight: 400;
     line-height: 1.6;
@@ -203,7 +225,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
+    font-family: IRANSans;
     font-size: 1em
 }
 
@@ -5811,7 +5833,7 @@ button.close {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: Raleway, sans-serif;
+    font-family: IRANSans_Black;
     font-style: normal;
     font-weight: 400;
     line-height: 1.6;
@@ -5934,7 +5956,7 @@ button.close {
     left: 0;
     z-index: 1060;
     max-width: 276px;
-    font-family: Raleway, sans-serif;
+    font-family: IRANSans_Black;
     font-style: normal;
     font-weight: 400;
     line-height: 1.6;
@@ -9294,28 +9316,18 @@ a.text-dark:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .04)
 }
 
-@font-face {
-    font-family: Vazir;
-    src: url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot');
-    src: url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot?#iefix') format('embedded-opentype'), url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.woff') format('woff'), url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.ttf') format('truetype');
-    font-weight: normal;
-}
 
 
-/* font-Koodakbold */
 
-@font-face {
-    font-family: Koodakbold;
-    src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot');
-    src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot?#iefix') format('embedded-opentype'), url('http://fonts.codearena.ir/b/koodakbold/koodakbold.woff') format('woff'), url('http://fonts.codearena.ir/b/koodakbold/koodakbold.ttf') format('truetype');
-    font-weight: normal;
-}
+
+
+
 
 body {
     /*background: url("../../images/auth/login.jpg");*/
     /*background-size: cover;*/
     /*color: #000;*/
-    font-family: 'Vazir'!important;
+    font-family: IRANSans_Black!important;
 }
 
 .logo {
@@ -9376,7 +9388,7 @@ body {
 }
 
 .form-signin {
-    font-family: Vazir!important;
+    /*font-family: IRANSans_Bold!important;*/
     width: 100%;
     text-align: center;
 }
@@ -9417,7 +9429,7 @@ body {
 }
 
 .form-signup {
-    font-family: 'Vazir'!important;
+    font-family: IRANSans_Black!important;
     width: 100%;
 }
 
@@ -9448,7 +9460,7 @@ select.form-control {
 }
 
 #extend_membership {
-    font-family: 'Vazir'!important;
+    font-family: IRANSans_Black!important;
 }
 
 .btn-register {

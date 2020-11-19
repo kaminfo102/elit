@@ -110,8 +110,8 @@
 								  <div class="form-group">
 									<label class="control-label">صفحه معرفی سایت</label>
 									<select class="form-control" name="website_enable" required>
-										<option value="yes" {{ get_option('website_enable') == 'yes' ? 'selected' : '' }}>فعال</option>
-										<option value="no" {{ get_option('website_enable') == 'no' ? 'selected' : '' }}>غیرفعال</option>
+										<option value="Yes" {{ get_option('website_enable') == 'Yes' ? 'selected' : '' }}>فعال</option>
+										<option value="No" {{ get_option('website_enable') == 'No' ? 'selected' : '' }}>غیرفعال</option>
 									</select>
 								  </div>
 								</div>
@@ -120,8 +120,8 @@
 								  <div class="form-group">
 									<label class="control-label">دراپ داون زبان سایت</label>
 									<select class="form-control" name="website_language_dropdown" required>
-										<option value="yes" {{ get_option('website_language_dropdown') == 'yes' ? 'selected' : '' }}>فعال</option>
-										<option value="no" {{ get_option('website_language_dropdown') == 'no' ? 'selected' : '' }}>غیرفعال</option>
+										<option value="Yes" {{ get_option('website_language_dropdown') == 'Yes' ? 'selected' : '' }}>فعال</option>
+										<option value="No" {{ get_option('website_language_dropdown') == 'No' ? 'selected' : '' }}>غیرفعال</option>
 									</select>
 								  </div>
 								</div>

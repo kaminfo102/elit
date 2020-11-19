@@ -37,6 +37,7 @@
 		<link rel="stylesheet" href="{{ asset('public/backend/assets/css/default-css.css') }}">
 		<link rel="stylesheet" href="{{ asset('public/backend/assets/css/styles.css?v=1.2') }}">
 		<link rel="stylesheet" href="{{ asset('public/backend/assets/css/responsive.css?v=1.2') }}">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
 		{{--<link rel="stylesheet" href="{{asset('vendor/persian-datepicker/dist/css/persian.datepicker.css')}}"/>--}}
 	<!-- DatePicker -->
 
@@ -110,7 +111,14 @@
 				<div class="sidebar-header">
 					<div class="logo">
 						<a href="{{ url('dashboard') }}"><img src="{{ Auth::user()->company_id != '' ? get_company_logo() : get_logo() }}" class="company-logo" alt="logo"></a>
+
+						<div>
+							<p style="color: white">{{ get_business_name() }}</p>
+
+
+						</div>
 					</div>
+
 				</div>
 				<div class="main-menu">
 					<div class="menu-inner">

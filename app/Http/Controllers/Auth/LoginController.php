@@ -54,7 +54,7 @@ class LoginController extends Controller
 		if($user->user_type == "staff"){	
 			$company = $user->company;  
 		    if ($company->status != 1) {
-				$errors = [$this->username() => _lang('اکانت کسب و کار شما فعال نمی باشد')];
+				$errors = [$this->username() => 'اکانت کسب و کار شما فعال نمی باشد'];
 			    Auth::logout();
 				return back()->withInput($request->only($this->username(), 'remember'))
 							 ->withErrors($errors);
@@ -89,7 +89,7 @@ class LoginController extends Controller
         $user = \App\User::where($this->username(), $request->{$this->username()})->first();
 
 		if ($user && \Hash::check($request->password, $user->password) && $user->status != 1) {
-			$errors = [$this->username() => _lang('Your account is not active !')];
+			$errors = [$this->username() => 'اکانت شما فعال نمی باشد'];
 		}
 		
         if ($request->expectsJson()) {

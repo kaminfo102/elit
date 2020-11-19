@@ -44,16 +44,16 @@
 						  <div class="form-group">
 							<label class="control-label">درگاه پرداخت</label>
 							<select class="form-control" name="gateway" id="gateway" required>
-								@if (get_option('paypal_active') == 'بله')
+								@if (get_option('paypal_active') == 'Yes')
 									<option value="PayPal">مستقیم بانک ملی</option>
 								@endif
-								@if (get_option('stripe_active') == 'بله')
+								@if (get_option('stripe_active') == 'Yes')
 									<option value="Stripe">پی نیکست</option>
 							    @endif
-							    @if (get_option('razorpay_active') == 'بله')
+							    @if (get_option('razorpay_active') == 'Yes')
 									<option value="Razorpay">زرین پال</option>
 							    @endif
-							    @if (get_option('paystack_active') == 'بله')
+							    @if (get_option('paystack_active') == 'Yes')
 									<option value="Paystack">مستقیم بانک ملت</option>
 							    @endif
 							</select>

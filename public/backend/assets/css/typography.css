@@ -11,7 +11,7 @@
 @font-face {
     font-family: BYekan;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     src:url('../fonts/BYekan/BYekan.eot');
     src: url('../fonts/BYekan/BYekan.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
     /*url('../fonts/BYekan/BYekan.woff2') format('woff2'),  !* FF39+,Chrome36+, Opera24+*!*/
@@ -19,23 +19,15 @@
     url('../fonts/BYekan/BYekan.ttf') format('truetype');
 }
 @font-face {
-    font-family: Vazir;
-    src: url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot');
-    src: url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot?#iefix') format('embedded-opentype'),
-    url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.woff') format('woff'),
-    url('http://fonts.codearena.ir/rastikerdar/vazir/vazir.ttf') format('truetype');
-    font-weight: normal;
+    font-family: IRANSans_Black;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/font/eot/IRANSansWeb_Black.eot');
+    src: url('../fonts/font/eot/IRANSansWeb_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../fonts/font/woff2/IRANSansWeb_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/font/woff/IRANSansWeb_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/font/ttf/IRANSansWeb_Black.ttf') format('truetype');
 }
-/* font-Koodakbold */
-@font-face {
-    font-family: Koodakbold;
-    src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot');
-    src: url('http://fonts.codearena.ir/b/koodakbold/koodakbold.eot?#iefix') format('embedded-opentype'),
-    url('http://fonts.codearena.ir/b/koodakbold/koodakbold.woff') format('woff'),
-    url('http://fonts.codearena.ir/b/koodakbold/koodakbold.ttf') format('truetype');
-    font-weight: normal;
-}
-
 /********************************************
 **                                     ****
 ********************************************/
@@ -46,18 +38,20 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
     margin: 0;
-    font-family: 'Koodakbold'!important;
+    font-family: 'IRANSans_Black'!important;
     font-weight: bolder;
 
 }
+h2{
+    float:left!important;
+}
 p{
-    font-family: 'Vazir'!important;
+    font-family: 'IRANSans_Black'!important;
     font-size: 12px;
     line-height: 26px;
     color: #444;

@@ -157,11 +157,11 @@
     position: relative;
     display: block;
     color: #8d97ad;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: capitalize;
     padding: 12px 12px;
     letter-spacing: 0;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .metismenu li a i {
@@ -687,9 +687,9 @@
 }
 
 .page-title {
-    font-size: 24px;
-    font-weight: 300;
-    color: #0f9905;
+    font-size: 22px;
+    font-weight: 400;
+    color: #0000ff;
     letter-spacing: 0;
     margin-right: 30px;
 }
@@ -750,9 +750,10 @@ ul.breadcrumbs {
 }
 
 .user-name {
+    font-family: IRANSans!important;
     font-size: 13px;
     font-weight: 600;
-    color: #0b0b0b;
+    color: #070707;
     letter-spacing: 0;
     cursor: pointer;
     -webkit-user-select: none;
@@ -770,7 +771,7 @@ ul.breadcrumbs {
 
 .notification-area .dropdown-toggle,
 .user-name.dropdown-toggle {
-    position: relative;
+    position: -ms-device-fixed;
 }
 
 .notification-area .dropdown-toggle:after,
@@ -785,8 +786,8 @@ ul.breadcrumbs {
     -webkit-transform: none!important;
     transform: none!important;
     top: 130%!important;
-    right: 0px!important;
-    left: auto!important;
+    /*right: 10%!important;*/
+    left: 50%!important;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     display: block!important;
@@ -818,8 +819,8 @@ ul.breadcrumbs {
 
 .user-profile .dropdown-menu a:hover {
     /*background: #f8f9fa;*/
-    background: #36b398;
-    color: #2942fa;
+    background: #9b0acf;
+    color: #fbf8fc;
 }
 
 
@@ -858,7 +859,7 @@ ul.breadcrumbs {
 }
 
 .header-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'IRANSans';
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0;
@@ -2290,12 +2291,12 @@ table.dataTable thead td {
 }
 
 .invoice-address h5 {
-    font-size: 17px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 .invoice-address p {
-    font-size: 15px;
+    font-size: 12px;
     color: #555;
 }
 
@@ -2310,13 +2311,13 @@ table.dataTable thead td {
 
 .invoice-table .table-bordered td,
 .invoice-table .table-bordered th {
-    border: 1px solid rgba(120, 130, 140, 0.13) !important;
+    border: 3px solid rgba(120, 130, 140, 0.13) !important;
     border-left: none!important;
     border-right: none!important;
 }
 
 .invoice-table tr td {
-    color: #666;
+    color: #510d86;
 }
 
 .invoice-table tfoot tr td {
@@ -2333,7 +2334,7 @@ table.dataTable thead td {
     padding: 12px 19px;
     border-radius: 3px;
     text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-weight: 600;
     letter-spacing: 0.03em;
     margin-left: 6px;

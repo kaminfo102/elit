@@ -17,7 +17,7 @@ class ProfileController extends Controller
     {	
 		$this->middleware(function ($request, $next) {
 			if(has_membership_system() == 'enabled' && Auth::user()->user_type == "user"){
-				if( membership_validity() < date('Y-m-d')){
+				if( membership_validity() < jdate('Y-m-d')){
 					return redirect('membership/extend')->with('message',_lang('عضویت شما منقضی شده است لطفا عضویت خود را تمدید کنید!'));
 				}
 			}

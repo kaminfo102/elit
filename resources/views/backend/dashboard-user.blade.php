@@ -22,6 +22,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg1">
 				<div class="p-4">
 					<div class="seofct-icon">
+						<i class="material-icons" style="font-size: 64px;">monetization_on</i>
 						<span>درآمد ماه اخیر</span>
 					</div>
 					<h2>{{ decimalPlace($current_month_income, $currency) }}</h2>
@@ -35,6 +36,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg2">
 				<div class="p-4">
 					<div class="seofct-icon">
+						<i class="material-icons" style="font-size: 64px;">assignment</i>
 						<span>هزینه های ماه اخیر</span>
 					</div>
 					<h2>{{ decimalPlace($current_month_expense, $currency) }}</h2>
@@ -48,6 +50,8 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg4">
 				<div class="p-4">
 					<div class="seofct-icon">
+						<i class="material-icons" style="font-size: 64px;">build</i>
+
 						<span>پروژه های در حال پیشرفت</span>
 					</div>
 					<h2>{{ isset($project_status['in_progress']) ? $project_status['in_progress'] : '0' }}</h2>
@@ -61,6 +65,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg2">
 				<div class="p-4">
 					<div class="seofct-icon">
+						<i class="material-icons" style="font-size: 64px;">check_circle</i>
 						<span>پروژه های کامل شده</span>
 					</div>
 					<h2>{{ isset($project_status['completed']) ? $project_status['completed'] : '0' }}</h2>
@@ -74,6 +79,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg1">
 				<div class="p-4">
 					<div class="seofct-icon">
+						<i class="material-icons" style="font-size: 64px;">description</i>
 						<span>مجموع فاکتورها</span>
 					</div>
 					<h2>{{ $total_invoice_count }}</h2>
@@ -87,6 +93,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg3">
 				<div class="p-4">
 					<div class="seofct-icon">
+						<i class="material-icons" style="font-size: 64px;">report_problem</i>
 						<span>فاکتور های پرداخت نشده</span>
 					</div>
 					<h2>{{ $unpaid_invoice_count }}</h2>
@@ -100,6 +107,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg4">
 				<div class="p-4">
 					<div class="seofct-icon">
+						<i class="material-icons" style="font-size: 64px;"> payment</i>
 						<span>مبلغ بدهی فاکتورها</span>
 					</div>
 					<h2>{{ decimalPlace($invoice_due_amount->grand_total - $invoice_due_amount->paid, $currency) }}</h2>
@@ -113,6 +121,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg3">
 				<div class="p-4">
 					<div class="seofct-icon">
+						<i class="material-icons" style="font-size: 64px;">remove_shopping_cart</i>
 						<span>فاکتورهای لغو شده</span>
 					</div>
 					<h2>{{ $canceled_invoice_count }}</h2>
@@ -142,11 +151,12 @@ $date_format = get_company_option('date_format','Y-m-d');
   <div class="col-md-6">
 	 <div class="card h-100">
 		<div class="card-body">
+
 		    <h4 class="header-title mt-0">پروژه های اخیر من</h4>
 		    <div class="table-responsive card-scroll">
 			    <table class="table">
 				      <thead>
-					    <tr>
+					    <tr class="thead-light" style="font-family: IRANSans_Black">
 							<th>نام</th>
 							<th>تاریخ شروع</th>
 							<th>تاریخ اتمام</th>
@@ -187,7 +197,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 		   <div class="table-responsive card-scroll">
 			   <table class="table">
 				    <thead>
-					    <tr>
+					    <tr class="thead-light" style="font-family: IRANSans_Black">
 							<th>نام</th>
 							<th>اولویت</th>
 							<th>وضعیت</th>
@@ -243,10 +253,10 @@ $date_format = get_company_option('date_format','Y-m-d');
 		  <div class="table-responsive">
 			<table class="table table-bordered">
 				<thead>
-				  <tr>
+				  <tr class="thead-light" style="font-family: IRANSans_Black">
 					<th> نام حساب </th>
 					<th> شماره حساب </th>
-					<th class="text-right">تراز</th>
+					<th >تراز</th>
 				  </tr>
 				</thead>
 				<tbody>
