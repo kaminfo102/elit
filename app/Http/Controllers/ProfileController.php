@@ -17,8 +17,8 @@ class ProfileController extends Controller
     {	
 		$this->middleware(function ($request, $next) {
 			if(has_membership_system() == 'enabled' && Auth::user()->user_type == "user"){
-				if( membership_validity() < jdate('Y-m-d')){
-					return redirect('membership/extend')->with('message',_lang('عضویت شما منقضی شده است لطفا عضویت خود را تمدید کنید!'));
+				if( membership_validity() < date('Y-m-d')){
+					return redirect('membership/extend')->with('message','عضویت شما منقضی شده است لطفا عضویت خود را تمدید کنید!');
 				}
 			}
 
@@ -72,7 +72,7 @@ class ProfileController extends Controller
 
         DB::commit();
 
-        return redirect('profile/edit')->with('success', _lang('اطلاعات بروزرسانی شد'));
+        return redirect('profile/edit')->with('success', 'اطلاعات بروزرسانی شد');
     }
 
     /**
@@ -105,9 +105,9 @@ class ProfileController extends Controller
             $user->password = Hash::make($request->password);
             $user->save();
         }else{
-            return back()->with('error', _lang('رمز عبور قدیمی مطابقت نداشت!'));
+            return back()->with('error', 'رمز عبور قدیمی مطابقت نداشت!');
         }
-        return back()->with('success', _lang('رمز عبور تغییر کرده است'));
+        return back()->with('success', 'رمز عبور تغییر کرده است');
     }
 
 }

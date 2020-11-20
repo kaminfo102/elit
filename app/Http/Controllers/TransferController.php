@@ -93,9 +93,9 @@ class TransferController extends Controller
 		DB::commit();
 
 		if(! $request->ajax()){
-           return redirect('transfer/create')->with('success', _lang('با موفقیت ذخیره شد'));
+           return redirect('transfer/create')->with('success','با موفقیت ذخیره شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'store','message'=>_lang('با موفقیت ذخیره شد'),'data'=>$transaction]);
+		   return response()->json(['result'=>'success','action'=>'store','message'=>'با موفقیت ذخیره شد','data'=>$transaction]);
 		}
         
    }

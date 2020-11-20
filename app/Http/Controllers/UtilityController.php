@@ -92,9 +92,9 @@ class UtilityController extends Controller
 			}
 			
 			if(! $request->ajax()){
-			   return redirect('administration/general_settings')->with('success', _lang('با موفقیت ذخیره شد'));
+			   return redirect('administration/general_settings')->with('success', 'با موفقیت ذخیره شد');
 			}else{
-			   return response()->json(['result'=>'success','action'=>'update','message'=>_lang('لوگو با موفقیت آپلود شد')]);
+			   return response()->json(['result'=>'success','action'=>'update','message'=>'لوگو با موفقیت آپلود شد']);
 			}
 
 		}

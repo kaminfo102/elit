@@ -129,9 +129,9 @@ class UserController extends Controller
 		
         
 		if(! $request->ajax()){
-           return redirect('users/create')->with('success', _lang('با موفقیت ذخیره شد'));
+           return redirect('users/create')->with('success', 'با موفقیت ذخیره شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'store','message'=>_lang('با موفقیت ذخیره شد'),'data'=>$user]);
+		   return response()->json(['result'=>'success','action'=>'store','message'=>'با موفقیت ذخیره شد','data'=>$user]);
 		}
         
    }
@@ -261,9 +261,9 @@ class UserController extends Controller
 		
 
 		if(! $request->ajax()){
-           return redirect('users')->with('success', _lang('با موفقیت بروزرسانی شد'));
+           return redirect('users')->with('success', 'با موفقیت بروزرسانی شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'update', 'message'=>_lang('با موفقیت بروزرسانی شد'),'data'=>$user]);
+		   return response()->json(['result'=>'success','action'=>'update', 'message'=>'با موفقیت بروزرسانی شد','data'=>$user]);
 		}
 	    
     }
@@ -287,7 +287,7 @@ class UserController extends Controller
 		
 		DB::commit();
 		
-        return redirect('users')->with('success',_lang('با موفقیت حذف شد'));
+        return redirect('users')->with('success','با موفقیت حذف شد');
     }
 	
 }

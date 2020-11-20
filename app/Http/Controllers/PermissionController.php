@@ -184,7 +184,7 @@ class PermissionController extends Controller
 			$permission->save();
 		}
 		
-		return redirect('permission/control')->with('success', _lang('با موفقیت ذخیره شد'));
+		return redirect('permission/control')->with('success', 'با موفقیت ذخیره شد');
 		
 	}
 	

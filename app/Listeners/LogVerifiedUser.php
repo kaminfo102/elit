@@ -35,7 +35,7 @@ class LogVerifiedUser
 		$replace = array(
 			'{name}'=>$user->name,
 			'{email}'=>$user->email,
-			'{valid_to}' =>date('d M,Y', strtotime($user->valid_to)),
+			'{valid_to}' =>jdate('d M,Y', strtotime($user->valid_to)),
 	    );
 		
 		//Send Welcome email

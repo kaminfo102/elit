@@ -85,9 +85,9 @@ class TaxController extends Controller
         }
         
 		if(! $request->ajax()){
-           return redirect('taxs/create')->with('success', _lang('با موفقیت ذخیره شد'));
+           return redirect('taxs/create')->with('success', 'با موفقیت ذخیره شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'store','message'=>_lang('با موفقیت ذخیره شد'),'data'=>$tax]);
+		   return response()->json(['result'=>'success','action'=>'store','message'=>'با موفقیت ذخیره شد','data'=>$tax]);
 		}
         
    }
@@ -167,9 +167,9 @@ class TaxController extends Controller
         }
 		
 		if(! $request->ajax()){
-           return redirect('taxs')->with('success', _lang('با موفقیت بروزرسانی شد'));
+           return redirect('taxs')->with('success', 'با موفقیت بروزرسانی شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'update', 'message'=>_lang('با موفقیت بروزرسانی شد'),'data'=>$tax]);
+		   return response()->json(['result'=>'success','action'=>'update', 'message'=>'با موفقیت بروزرسانی شد','data'=>$tax]);
 		}
 	    
     }
@@ -185,6 +185,6 @@ class TaxController extends Controller
         $tax = Tax::where("id",$id)
                   ->where("company_id",company_id());
         $tax->delete();
-        return redirect('taxs')->with('success',_lang('اطلاعات با موفقیت حذف شد'));
+        return redirect('taxs')->with('success','اطلاعات با موفقیت حذف شد');
     }
 }

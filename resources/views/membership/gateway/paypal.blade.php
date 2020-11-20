@@ -11,9 +11,9 @@
 
                 <div class="card-body" id="extend_membership">
                     
-					<h5 class="text-center">'{{ _lang('مبلغ') }}' : {{ g_decimal_place(convert_currency(get_option('currency','IRR'),get_option('paypal_currency','IRR'),$amount), currency(get_option('paypal_currency','IRR'))) }}</h5>
+					<h5 class="text-center"> مبلغ :  {{ g_decimal_place(convert_currency(get_option('currency','IRR'),get_option('paypal_currency','IRR'),$amount), currency(get_option('paypal_currency','IRR'))) }}</h5>
 					<br>
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<form action="https://www.zarinpal.com/pg/services/WebGate/wsdl" method="post">
 						<input type="hidden" name="cmd" value="_xclick">
 						<input type="hidden" name="business" value="{{ get_option('paypal_email') }}">
 						<input type="hidden" name="item_name" value="{{ $title }}">
@@ -30,7 +30,7 @@
 						<input type="hidden" name="cancel_return" value="{{ url('membership/paypal/cancel') }}" />
 						<input type="hidden" name="notify_url" value="{{ url('membership/paypal_ipn') }}" />
 						
-						<input type="submit" name="submit" class="btn btn-primary btn-block" value="Pay Now" alt="PayPal - The safer, easier way to pay online.">
+						<input type="submit" name="submit" class="btn btn-primary btn-block" value="پـــرداخــت" alt="PayPal - The safer, easier way to pay online.">
 					</form>
 
                 </div>

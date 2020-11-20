@@ -69,7 +69,7 @@ class MembershipController extends Controller
 
 		$package = Package::find($request->package);
 
-		$data['title'] = " خرید {$package->package_name} بسته ";
+		$data['title'] = "  {$package->package_name}  ";
 
 		if($request->package_type == 'monthly'){
 			$data['amount'] = $package->cost_per_month;
@@ -168,9 +168,9 @@ class MembershipController extends Controller
 			$company = Company::find($payment->company_id);
 
 			if($payment->package_type == 'monthly'){
-				$company->valid_to = jdate('Y-m-d', strtotime('+1 months'));
+				$company->valid_to = date('Y-m-d', strtotime('+1 months'));
 			}else{
-				$company->valid_to = jdate('Y-m-d', strtotime('+1 year'));
+				$company->valid_to = date('Y-m-d', strtotime('+1 year'));
 			}
 
 			$company->membership_type = 'member';
@@ -206,7 +206,7 @@ class MembershipController extends Controller
 			$replace = array(
 				'{name}'=>$user->name,
 				'{email}'=>$user->email,
-				'{valid_to}' =>jdate('d M,Y', strtotime($company->valid_to)),
+				'{valid_to}' =>date('d M,Y', strtotime($company->valid_to)),
 			);
 			
 			//Send email Confrimation
@@ -246,9 +246,9 @@ class MembershipController extends Controller
 		
 		$company = Company::find($payment->company_id);
 		if($payment->package_type == 'monthly'){
-			$company->valid_to = jdate('Y-m-d', strtotime('+1 months'));
+			$company->valid_to = date('Y-m-d', strtotime('+1 months'));
 		}else{
-			$company->valid_to = jdate('Y-m-d', strtotime('+1 year'));
+			$company->valid_to = date('Y-m-d', strtotime('+1 year'));
 		}
 		$company->membership_type = 'member';
 		$company->last_email = NULL;
@@ -284,7 +284,7 @@ class MembershipController extends Controller
 		$replace = array(
 			'{name}' =>$user->name,
 			'{email}' =>$user->email,
-			'{valid_to}' =>jdate('d M,Y', strtotime($company->valid_to)),
+			'{valid_to}' =>date('d M,Y', strtotime($company->valid_to)),
 		);
 		
 		//Send email Confrimation
@@ -332,9 +332,9 @@ class MembershipController extends Controller
 			$company = Company::find($payment->company_id);
 
 			if($payment->package_type == 'monthly'){
-				$company->valid_to = jdate('Y-m-d', strtotime('+1 months'));
+				$company->valid_to = date('Y-m-d', strtotime('+1 months'));
 			}else{
-				$company->valid_to = jdate('Y-m-d', strtotime('+1 year'));
+				$company->valid_to = date('Y-m-d', strtotime('+1 year'));
 			}
 
 			$company->membership_type = 'member';
@@ -371,7 +371,7 @@ class MembershipController extends Controller
 			$replace = array(
 				'{name}' =>$user->name,
 				'{email}' =>$user->email,
-				'{valid_to}' =>jdate('d M,Y', strtotime($company->valid_to)),
+				'{valid_to}' =>date('d M,Y', strtotime($company->valid_to)),
 			);
 			
 			//Send email Confrimation
@@ -438,9 +438,9 @@ class MembershipController extends Controller
 		
 		$company = Company::find($payment->company_id);
 		if($payment->package_type == 'monthly'){
-			$company->valid_to = jdate('Y-m-d', strtotime('+1 months'));
+			$company->valid_to = date('Y-m-d', strtotime('+1 months'));
 		}else{
-			$company->valid_to = jdate('Y-m-d', strtotime('+1 year'));
+			$company->valid_to = date('Y-m-d', strtotime('+1 year'));
 		}
 		$company->membership_type = 'member';
 		$company->last_email = NULL;
@@ -476,7 +476,7 @@ class MembershipController extends Controller
 		$replace = array(
 			'{name}' =>$user->name,
 			'{email}' =>$user->email,
-			'{valid_to}' =>jdate('d M,Y', strtotime($company->valid_to)),
+			'{valid_to}' =>date('d M,Y', strtotime($company->valid_to)),
 		);
 		
 		//Send email Confrimation

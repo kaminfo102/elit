@@ -89,9 +89,9 @@ class SupplierController extends Controller
         $supplier->save();
         
 		if(! $request->ajax()){
-           return redirect('suppliers/create')->with('success', _lang('با موفقیت ذخیره شد'));
+           return redirect('suppliers/create')->with('success', 'با موفقیت ذخیره شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'store','message'=>_lang('با موفقیت ذخیره شد'),'data'=>$supplier]);
+		   return response()->json(['result'=>'success','action'=>'store','message'=>'با موفقیت ذخیره شد','data'=>$supplier]);
 		}
         
    }
@@ -185,9 +185,9 @@ class SupplierController extends Controller
         $supplier->save();
 		
 		if(! $request->ajax()){
-           return redirect('suppliers')->with('success', _lang('با موفقیت بروزرسانی شد'));
+           return redirect('suppliers')->with('success', 'با موفقیت بروزرسانی شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'update', 'message'=>_lang('با موفقیت بروزرسانی شد'),'data'=>$supplier]);
+		   return response()->json(['result'=>'success','action'=>'update', 'message'=>'با موفقیت بروزرسانی شد','data'=>$supplier]);
 		}
 	    
     }
@@ -202,6 +202,6 @@ class SupplierController extends Controller
     {
         $supplier = Supplier::where('id',$id)->where("company_id",company_id());
         $supplier->delete();
-        return redirect('suppliers')->with('success',_lang('با موفقیت حذف شد'));
+        return redirect('suppliers')->with('success','با موفقیت حذف شد');
     }
 }

@@ -23,10 +23,9 @@ class TaskStatusController extends Controller
             if( has_membership_system() == 'enabled' ){
                 if( ! has_feature( 'project_management_module' ) ){
                     if( ! $request->ajax()){
-                        return redirect('membership/extend')->with('message', _lang('متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست. شما می توانید بسته خود را ارتقا دهید!
-'));
+                        return redirect('membership/extend')->with('message', 'متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست. شما می توانید بسته خود را ارتقا دهید!');
                     }else{
-                        return response()->json(['result'=>'error','message'=>_lang('متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست!')]);
+                        return response()->json(['result'=>'error','message'=>'متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست!']);
                     }
                 }
             }
@@ -91,9 +90,9 @@ class TaskStatusController extends Controller
 		$taskstatus->color = '<div class="rounded-circle color-circle" style="background:'. $taskstatus->color .'"></div>';
         
 		if(! $request->ajax()){
-           return redirect()->route('task_statuses.create')->with('success', _lang('با موفقیت ذخیره شد'));
+           return redirect()->route('task_statuses.create')->with('success', 'با موفقیت ذخیره شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'store','message'=>_lang('با موفقیت ذخیره شد'),'data'=>$taskstatus, 'table' => '#task_status_table']);
+		   return response()->json(['result'=>'success','action'=>'store','message'=>'با موفقیت ذخیره شد','data'=>$taskstatus, 'table' => '#task_status_table']);
 		}
         
    }
@@ -192,9 +191,9 @@ class TaskStatusController extends Controller
 		$taskstatus->color = '<div class="rounded-circle color-circle" style="background:'. $taskstatus->color .'"></div>';
 		
 		if(! $request->ajax()){
-           return redirect()->route('task_statuses.index')->with('success', _lang('با موفقیت بروزرسانی شد'));
+           return redirect()->route('task_statuses.index')->with('success', 'با موفقیت بروزرسانی شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'update', 'message'=>_lang('با موفقیت بروزرسانی شد'),'data'=>$taskstatus, 'table' => '#task_status_table']);
+		   return response()->json(['result'=>'success','action'=>'update', 'message'=>'با موفقیت بروزرسانی شد','data'=>$taskstatus, 'table' => '#task_status_table']);
 		}
 	    
     }
@@ -212,9 +211,9 @@ class TaskStatusController extends Controller
         $taskstatus->delete();
 
 		if(! $request->ajax()){
-           return back()->with('success', _lang('با موفقیت حذف شد'));
+           return back()->with('success', 'با موفقیت حذف شد');
         }else{
-           return response()->json(['result'=>'success', 'message'=>_lang('با موفقیت حذف شد'), 'id'=>$id, 'table' => '#task_status_table']);
+           return response()->json(['result'=>'success', 'message'=>'با موفقیت حذف شد', 'id'=>$id, 'table' => '#task_status_table']);
         }
     }
 }

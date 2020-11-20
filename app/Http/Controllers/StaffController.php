@@ -22,7 +22,7 @@ class StaffController extends Controller
         $this->middleware(function ($request, $next) {
             if( has_membership_system() == 'enabled' ){
                 if( ! has_feature( 'staff_limit' ) ){
-                    return redirect('membership/extend')->with('message',_lang('متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست. شما می توانید بسته خود را ارتقا دهید!'));
+                    return redirect('membership/extend')->with('message','متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست. شما می توانید بسته خود را ارتقا دهید!');
                 }
 
                 // If request is create/store
@@ -30,9 +30,9 @@ class StaffController extends Controller
                 if( $route_name == 'staffs.store'){
                    if( ! has_feature_limit( 'staff_limit' ) ){
                       if( ! $request->ajax()){
-                          return redirect('membership/extend')->with('message', _lang('شما قبلاً به حد مجاز استفاده خود رسیده اید. شما می توانید بسته خود را ارتقا دهید!'));
+                          return redirect('membership/extend')->with('message', 'شما قبلاً به حد مجاز استفاده خود رسیده اید. شما می توانید بسته خود را ارتقا دهید!');
                       }else{
-                          return response()->json(['result'=>'error','message'=> _lang('شما قبلاً به حد مجاز استفاده خود رسیده اید. شما می توانید بسته خود را ارتقا دهید!') ]);
+                          return response()->json(['result'=>'error','message'=> 'شما قبلاً به حد مجاز استفاده خود رسیده اید. شما می توانید بسته خود را ارتقا دهید!' ]);
                       }
                    }
                 }
@@ -123,13 +123,13 @@ class StaffController extends Controller
 		//Set Data
         $user->user_type = ucwords($user->user_type);
 		$user->role_id = $user->role->name;
-		$user->status = $user->status == 1 ? _lang('Active') : _lang('In-Active');
+		$user->status = $user->status == 1 ? 'فعال' : 'غیرفعال';
 		
         
 		if(! $request->ajax()){
-           return redirect('staffs/create')->with('success', _lang('با موفقیت ذخیره شد'));
+           return redirect('staffs/create')->with('success', 'با موفقیت ذخیره شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'store','message'=>_lang('با موفقیت ذخیره شد'),'data'=>$user]);
+		   return response()->json(['result'=>'success','action'=>'store','message'=>'با موفقیت ذخیره شد','data'=>$user]);
 		}
         
    }
@@ -229,9 +229,9 @@ class StaffController extends Controller
 		$user->status = $user->status == 1 ? _lang('Active') : _lang('In-Active');
 		
 		if(! $request->ajax()){
-           return redirect('staffs')->with('success', _lang('با موفقیت بروزرسانی شد'));
+           return redirect('staffs')->with('success', 'با موفقیت بروزرسانی شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'update', 'message'=>_lang('با موفقیت بروزرسانی شد'),'data'=>$user]);
+		   return response()->json(['result'=>'success','action'=>'update', 'message'=>'با موفقیت بروزرسانی شد','data'=>$user]);
 		}
 	    
     }
@@ -247,7 +247,7 @@ class StaffController extends Controller
         $user = User::where("id",$id)
                     ->where("company_id",company_id());
         $user->delete();
-        return redirect('staffs')->with('success',_lang('با موفقیت حذف شد'));
+        return redirect('staffs')->with('success','با موفقیت حذف شد');
     }
 	
 }

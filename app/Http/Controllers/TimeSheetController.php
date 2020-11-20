@@ -23,9 +23,9 @@ class TimeSheetController extends Controller
             if( has_membership_system() == 'enabled' ){
                 if( ! has_feature( 'project_management_module' ) ){
                     if( ! $request->ajax()){
-                        return redirect('membership/extend')->with('message', _lang('متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست. شما می توانید بسته خود را ارتقا دهید!'));
+                        return redirect('membership/extend')->with('message', 'متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست. شما می توانید بسته خود را ارتقا دهید!');
                     }else{
-                        return response()->json(['result'=>'error','message'=>_lang('متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست!')]);
+                        return response()->json(['result'=>'error','message'=>'متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست!']);
                     }
                 }
             }

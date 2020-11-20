@@ -101,13 +101,20 @@ if ( ! function_exists('get_last_message')){
 if(! function_exists('get_business_name')){
     function get_business_name()
     {
-        $company_id=company_id();
-        $user_id=Auth::user()->id;
-        if(Auth::user()->user_type == 'user'){
-            /*$business_name = DB::select("SELECT as business_name FROM companies WHERE $user_id = $company_id");*/
-
-        }else{
-            return "No";
+        $company_id = Auth::user()->company_id;
+        $user_id = Auth::user()->id;
+        if (Auth::user()->user_type == 'user') {
+            $business_name = DB::select("SELECT  business_name FROM companies WHERE id = $company_id");
+            return 'سمت: مدیر '.' '. $business_name[0]->business_name;
+        } elseif (Auth::user()->user_type == 'admin') {
+            return ' سمت کاربر : مدیر ارشد سامانه';
+        } elseif (Auth::user()->user_type == 'client') {
+            return 'سمت کاربر : کلاینت';
+        } elseif (Auth::user()->user_type == 'staff') {
+            return 'سمت کاربر : کارمند';
+        }
+        {
+            return 'سمت کاربر : نامشخص ';
         }
     }
 }
@@ -210,7 +217,7 @@ if ( ! function_exists('get_last_group_message')){
 		 if ( $message != NULL ) { 
 			return $message[0]->message;
 		 }
-		 return _lang('پیامی پیدا نشد');
+		 return 'پیامی پیدا نشد';
 	}
 }
 

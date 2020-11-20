@@ -29,9 +29,9 @@ class TaskController extends Controller
             if( has_membership_system() == 'enabled' ){
                 if( ! has_feature( 'project_management_module' ) ){
                     if( ! $request->ajax()){
-                        return redirect('membership/extend')->with('message', _lang('متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست. شما می توانید بسته خود را ارتقا دهید!'));
+                        return redirect('membership/extend')->with('message', 'متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست. شما می توانید بسته خود را ارتقا دهید!');
                     }else{
-                        return response()->json(['result'=>'error','message'=>_lang('متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست!')]);
+                        return response()->json(['result'=>'error','message'=>'متأسفیم ، این ویژگی در اشتراک فعلی شما در دسترس نیست!']);
                     }
                 }
             }
@@ -154,7 +154,7 @@ class TaskController extends Controller
 						->addColumn('action', function ($task) {
 								return '<form action="'.action('TaskController@destroy', $task['id']).'" class="text-center" method="post">'
 								.'<a href="'.action('TaskController@show', $task['id']).'" data-title="'. $task->title .'" class="btn btn-primary btn-xs ajax-modal"><i class="ti-eye"></i></a>&nbsp;'
-								.'<a href="'.action('TaskController@edit', $task['id']).'" data-title="'. _lang('بروزرسانی وظیفه') .'" class="btn btn-warning btn-xs ajax-modal"><i class="ti-pencil"></i></a>&nbsp;'
+								.'<a href="'.action('TaskController@edit', $task['id']).'" data-title="'. 'بروزرسانی وظیفه' .'" class="btn btn-warning btn-xs ajax-modal"><i class="ti-pencil"></i></a>&nbsp;'
 								.csrf_field()
 								.'<input name="_method" type="hidden" value="DELETE">'
 								.'<button class="btn btn-danger btn-xs btn-remove" type="submit"><i class="ti-eraser"></i></button>'
@@ -235,9 +235,9 @@ class TaskController extends Controller
         DB::commit();
 
         if(! $request->ajax()){
-           return redirect()->route('tasks.create')->with('success', _lang('با موفقیت ذخیره شد'));
+           return redirect()->route('tasks.create')->with('success', 'با موفقیت ذخیره شد');
         }else{
-           return response()->json(['result'=>'success','action'=>'store','message'=>_lang('با موفقیت ذخیره شد'), 'data'=>$task, 'table' => '#tasks_table']);
+           return response()->json(['result'=>'success','action'=>'store','message'=>'با موفقیت ذخیره شد', 'data'=>$task, 'table' => '#tasks_table']);
         }
         
    }
@@ -257,9 +257,9 @@ class TaskController extends Controller
 		
         if(! $task){
 			if(! $request->ajax()){
-				return back()->with('error', _lang('وظیفه ای پیدا نشد!'));
+				return back()->with('error', 'وظیفه ای پیدا نشد!');
 			}else{
-				return response()->json(['result'=>'error', 'message' =>  _lang('وظیفه ای پیدا نشد')]);
+				return response()->json(['result'=>'error', 'message' =>  'وظیفه ای پیدا نشد']);
 			}
 		}		
 					
@@ -336,16 +336,16 @@ class TaskController extends Controller
 	
         $task->save();
 
-        create_log('projects', $task->project_id, _lang('بروزرسانی وظیفه').' - '.$task->id.'# '.$task->title);
+        create_log('projects', $task->project_id, 'بروزرسانی وظیفه'.' - '.$task->id.'# '.$task->title);
 
         if($task->assigned_user_id != null){
            Notification::send($task->assigned_user, new TaskUpdated($task));
         }
 		
 		if(! $request->ajax()){
-           return redirect()->route('tasks.index')->with('success', _lang('بروزرسانی با موفقیت انجام شد'));
+           return redirect()->route('tasks.index')->with('success', 'بروزرسانی با موفقیت انجام شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'update', 'message'=>_lang('بروزرسانی با موفقیت انجام شد'), 'data'=>$task, 'table' => '#tasks_table']);
+		   return response()->json(['result'=>'success','action'=>'update', 'message'=>'بروزرسانی با موفقیت انجام شد', 'data'=>$task, 'table' => '#tasks_table']);
 		}
 	    
     }
@@ -361,8 +361,8 @@ class TaskController extends Controller
         $task = Task::where('id', $id)
                     ->where('company_id',company_id())
                     ->first();
-        create_log('projects', $task->project_id, _lang('حذف وظیفه').' - '.$task->id.'# '.$task->title);
+        create_log('projects', $task->project_id, 'حذف وظیفه'.' - '.$task->id.'# '.$task->title);
         $task->delete();
-        return redirect()->route('tasks.index')->with('success',_lang('با موفقیت حذف شد!'));
+        return redirect()->route('tasks.index')->with('success','با موفقیت حذف شد!');
     }
 }

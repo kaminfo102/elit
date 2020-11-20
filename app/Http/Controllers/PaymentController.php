@@ -60,10 +60,10 @@ class PaymentController extends Controller
 		$company = Company::find($user->company_id);
 
 		if($request->package_type == 'monthly'){
-			$company->valid_to = jdate('Y-m-d', strtotime('+1 months'));
+			$company->valid_to = date('Y-m-d', strtotime('+1 months'));
 			$company->package_type = 'monthly';
 		}else{
-			$company->valid_to = jdate('Y-m-d', strtotime('+1 year'));
+			$company->valid_to = date('Y-m-d', strtotime('+1 year'));
 			$company->package_type = 'yearly';
 		}
 
