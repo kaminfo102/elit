@@ -23,14 +23,14 @@
 	var $lang_loading = "بارگزاری...";
 	var $lang_processing = "پردازش ...";
 	var $lang_search = "جستجو";
-	var $lang_no_matching_records_found = "{{ _lang('هیچ پرونده مطابقی یافت نشد') }}";
+	var $lang_no_matching_records_found = "هیچ پرونده مطابقی یافت نشد";
 	var $lang_first = "ابتدا";
 	var $lang_last = "آخرین";
 	var $lang_next = "بعدی";
 	var $lang_previous = "قبلی";
 	var $lang_copy = "کپی";
 	var $lang_excel = "اکسل";
-	var $lang_pdf = "{{ _lang('PDF') }}";
+	var $lang_pdf = "PDF";
 	var $lang_print = "چاپ";
 	var $lang_you = "شما";
 	var $lang_please_select_a_contact_first = "لطفا ابتدا مخاطب را انتخاب کنید";
@@ -49,7 +49,7 @@
 	var $lang_discount = "تخفیف";
 	var $lang_tax = "مالیات";
 	var $lang_save = "ذخیره";
-	var $lang_no_tax = "دون مالیات";
+	var $lang_no_tax = "بدون مالیات";
 	var $lang_update_product = "}بروز رسانی محصول";
 	var $lang_none = "خالی";
 	var $lang_copied_invoice_link = "کپی لینک فاکتور";

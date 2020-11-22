@@ -4,10 +4,10 @@
     Version: 1.0
 
 ----------------------------------------------
-    
+
     CSS INDEX
     ===================
-  
+
     1. Core Css
     2. Dashboard One
         2.1 Sidebar Menu
@@ -101,9 +101,9 @@
 /*-------------------- 2.1 Sidebar Menu -------------------*/
 
 .sidebar-menu {
-    border-radius: 5%;
+   /* border-radius: 5%;
     border-color: #e7081b;
-    border-style: solid;
+    border-style: solid;*/
     position: fixed;
     left: 0;
     top: 0;
@@ -111,7 +111,7 @@
     height: 100vh;
     width: 280px;
     overflow: hidden;
-    background: #303641;
+    background: #f8f7f7;
     box-shadow: 2px 0 32px rgba(0, 0, 0, 0.05);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -136,7 +136,7 @@
 
 .sidebar-header {
     padding: 10px 32px 20px;
-    background: #303641;
+    background: #f8f7f7;
     border-bottom: 1px solid #343e50;
 }
 
@@ -156,7 +156,7 @@
 .metismenu li a {
     position: relative;
     display: block;
-    color: #8d97ad;
+    color: #3e3e40;
     font-size: 12px;
     text-transform: capitalize;
     padding: 12px 12px;
@@ -165,7 +165,7 @@
 }
 
 .metismenu li a i {
-    color: #8d97ad;
+    color: #1f1f21;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -208,18 +208,18 @@
 
 .metismenu>li:hover>a,
 .metismenu>li.active>a {
-    color: #fff;
+    color: #ffffff;
     background: #343942;
 }
 
 .metismenu li:hover>a,
 .metismenu li.active>a {
-    color: #fff;
+    color: #0fe74d;
 }
 
 .metismenu li:hover>a i,
 .metismenu li.active>a i {
-    color: #fff;
+    color: #f8f5f8;
 }
 
 .metismenu li li a:after {

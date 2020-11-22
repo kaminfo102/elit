@@ -22,7 +22,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg1">
 				<div class="p-4">
 					<div class="seofct-icon">
-						<i class="material-icons" style="font-size: 64px;">monetization_on</i>
+						<i class="ti-money"></i>
 						<span>درآمد ماه اخیر</span>
 					</div>
 					<h2>{{ decimalPlace($current_month_income, $currency) }}</h2>
@@ -36,7 +36,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg2">
 				<div class="p-4">
 					<div class="seofct-icon">
-						<i class="material-icons" style="font-size: 64px;">assignment</i>
+						<i class="ti-clipboard"></i>
 						<span>هزینه های ماه اخیر</span>
 					</div>
 					<h2>{{ decimalPlace($current_month_expense, $currency) }}</h2>
@@ -50,7 +50,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg4">
 				<div class="p-4">
 					<div class="seofct-icon">
-						<i class="material-icons" style="font-size: 64px;">build</i>
+						<i class="ti-settings"></i>
 
 						<span>پروژه های در حال پیشرفت</span>
 					</div>
@@ -65,7 +65,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg2">
 				<div class="p-4">
 					<div class="seofct-icon">
-						<i class="material-icons" style="font-size: 64px;">check_circle</i>
+						<i class="ti-check-box"></i>
 						<span>پروژه های کامل شده</span>
 					</div>
 					<h2>{{ isset($project_status['completed']) ? $project_status['completed'] : '0' }}</h2>
@@ -79,7 +79,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg1">
 				<div class="p-4">
 					<div class="seofct-icon">
-						<i class="material-icons" style="font-size: 64px;">description</i>
+						<i class="ti-files"></i>
 						<span>مجموع فاکتورها</span>
 					</div>
 					<h2>{{ $total_invoice_count }}</h2>
@@ -93,8 +93,8 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg3">
 				<div class="p-4">
 					<div class="seofct-icon">
-						<i class="material-icons" style="font-size: 64px;">report_problem</i>
-						<span>فاکتور های پرداخت نشده</span>
+						<i class="ti-stats-down"></i>
+						<span>فاکتورهای پرداخت نشده</span>
 					</div>
 					<h2>{{ $unpaid_invoice_count }}</h2>
 				</div>
@@ -107,7 +107,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg4">
 				<div class="p-4">
 					<div class="seofct-icon">
-						<i class="material-icons" style="font-size: 64px;"> payment</i>
+						<i class="ti-credit-card"></i>
 						<span>مبلغ بدهی فاکتورها</span>
 					</div>
 					<h2>{{ decimalPlace($invoice_due_amount->grand_total - $invoice_due_amount->paid, $currency) }}</h2>
@@ -121,7 +121,7 @@ $date_format = get_company_option('date_format','Y-m-d');
 			<div class="seo-fact sbg3">
 				<div class="p-4">
 					<div class="seofct-icon">
-						<i class="material-icons" style="font-size: 64px;">remove_shopping_cart</i>
+						<i class="ti-alert"></i>
 						<span>فاکتورهای لغو شده</span>
 					</div>
 					<h2>{{ $canceled_invoice_count }}</h2>

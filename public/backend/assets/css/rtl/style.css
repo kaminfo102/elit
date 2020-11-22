@@ -177,11 +177,11 @@ code, samp, var, [type="email"], [type="file"], [type="number"], [type="password
 		left: 0;
 		right: -100%;
 	}
-	
+
 	.page-container, .sbar_collapsed.page-container {
 		padding-right: 0;
 	}
-	
+
 	.sbar_collapsed_rtl.page-container > .sidebar-menu {
 		right: 0px;
 	}
