@@ -153,16 +153,16 @@
 							  <div class="form-group">
 								<label class="control-label">فرمت تاریخ</label>					
 								<select class="form-control auto-select" name="date_format" data-selected="{{ get_company_option('date_format','Y-m-d') }}" required>
-									<option value="Y-m-d">{{ date('Y-m-d') }}</option>
-									<option value="d-m-Y">{{ date('d-m-Y') }}</option>
-									<option value="d/m/Y">{{ date('d/m/Y') }}</option>
-									<option value="m-d-Y">{{ date('m-d-Y') }}</option>
-									<option value="m.d.Y">{{ date('m.d.Y') }}</option>
-									<option value="m/d/Y">{{ date('m/d/Y') }}</option>
-									<option value="d.m.Y">{{ date('d.m.Y') }}</option>
-									<option value="d/M/Y">{{ date('d/M/Y') }}</option>
-									<option value="d/M/Y">{{ date('M/d/Y') }}</option>
-									<option value="d M, Y">{{ date('d M, Y') }}</option>
+									<option value="Y-m-d">{{ jdate('Y-m-d') }}</option>
+									<option value="d-m-Y">{{ jdate('d-m-Y') }}</option>
+									<option value="d/m/Y">{{ jdate('d/m/Y') }}</option>
+									<option value="m-d-Y">{{ jdate('m-d-Y') }}</option>
+									<option value="m.d.Y">{{ jdate('m.d.Y') }}</option>
+									<option value="m/d/Y">{{ jdate('m/d/Y') }}</option>
+									<option value="d.m.Y">{{ jdate('d.m.Y') }}</option>
+									<option value="d/M/Y">{{ jdate('d/M/Y') }}</option>
+									<option value="d/M/Y">{{ jdate('M/d/Y') }}</option>
+									<option value="d M, Y">{{ jdate('d M, Y') }}</option>
 								</select>
 							  </div>
 							</div>

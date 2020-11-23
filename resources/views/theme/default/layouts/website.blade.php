@@ -297,7 +297,11 @@
 
     <!--====== jquery js ======-->
     <script src="{{ asset('public/theme/default/assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('public/theme/default/assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
+    {{--<script src="{{ asset('public/theme/default/assets/js/vendor/jquery-1.12.4.min.js') }}"></script>--}}
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
 
     <!--====== Bootstrap js ======-->
     <script src="{{ asset('public/theme/default/assets/js/bootstrap.min.js') }}"></script>

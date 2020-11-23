@@ -18,7 +18,7 @@
 		{{ _lang('پیغام') }}: {{ $content->message }}</p>
 
 		<br>
-		<p>{{ _lang('با تشکر') }}</p>
+		<p>با تشکر</p>
 	</div>
 </body>
 </html>

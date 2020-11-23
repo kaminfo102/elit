@@ -11,10 +11,10 @@
 				<table class="table table-bordered data-table">
 					<thead>
 					  <tr>
-						<th>{{ _lang('واحد پول') }}</th>
-						<th>{{ _lang('نرخ') }}</th>
+						<th>واحد پول</th>
+						<th>نرخ</th>
 						@if($converter == 'manual')
-							<th class="text-center">{{ _lang('ویرایش') }}</th>
+							<th class="text-center">ویرایش</th>
 						@endif
 					  </tr>
 					</thead>
@@ -26,7 +26,7 @@
 						<td class='subject'>{{ $rate->rate }}</td>
 						@if($converter == 'manual')
 							<td class="text-center">
-								<a href="{{ action('UtilityController@currency_rates', $rate->id) }}" class="btn btn-warning btn-xs ajax-modal">{{ _lang('Edit') }}</a>
+								<a href="{{ action('UtilityController@currency_rates', $rate->id) }}" class="btn btn-warning btn-xs ajax-modal">ویرایـــــش</a>
 							</td>
 						@endif
 					  </tr>
