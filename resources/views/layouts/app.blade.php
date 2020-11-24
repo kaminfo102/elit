@@ -187,9 +187,9 @@
 								</h4>
 								<div class="dropdown-menu">
 									@if(Auth::user()->user_type == 'user' && get_option('membership_system') == 'enabled')
+										<a class="dropdown-item" href="{{ url('company/general_settings') }}"><i class="ti-settings text-muted mr-2"></i> تنظیمات شرکت</a>
 										<a class="dropdown-item" href="{{ url('membership/my_subscription') }}"><i class="ti-package text-muted mr-2"></i> اشتراک من</a>
-
-										<a class="dropdown-item" href="{{ url('membership/extend') }}"><i class="ti-wallet text-muted mr-2"></i> اشتراک را ارتقا دهید</a>
+										<a class="dropdown-item" href="{{ url('membership/extend') }}"><i class="ti-wallet text-muted mr-2"></i> ارتقاء اشتراک</a>
 									@endif
 									<a class="dropdown-item" href="{{ url('profile/edit') }}"><i class="ti-settings text-muted mr-2"></i> تنظیمات پروفایل</a>
 									<a class="dropdown-item" href="{{ url('profile/change_password') }}"><i class="ti-pencil text-muted mr-2"></i> تغییر کلمه عبور</a>

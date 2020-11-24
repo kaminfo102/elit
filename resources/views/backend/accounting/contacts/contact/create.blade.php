@@ -65,7 +65,7 @@
 				  </div>
 				</div>
 
-				<div class="col-md-6">
+				{{--<div class="col-md-6">
 				  <div class="form-group">
 					<label class="control-label">کشور</label>						
 					<select class="form-control select2" name="country">
@@ -73,7 +73,7 @@
 						{{ get_country_list( old('country') ) }}
 					</select>
 				  </div>
-				</div>
+				</div>--}}
 				
 				<div class="col-md-6">
 				  <div class="form-group">
@@ -102,12 +102,12 @@
 				  </div>
 				</div>
 
-				<div class="col-md-4">
+				{{--<div class="col-md-4">
 				  <div class="form-group">
 					<label class="control-label">منطقه</label>						
 					<input type="text" class="form-control" name="state" value="{{ old('state') }}">
 				  </div>
-				</div>
+				</div>--}}
 
 				<div class="col-md-4">
 				  <div class="form-group">
@@ -169,11 +169,11 @@
 			<div class="card-body">
 			    
 			    <div class="alert alert-info">
-			   	 	<span>{{ _lang('اگر مشتری قبلاً حسابی با ایمیل مخاطب مرتبط داشته باشد ، مشتری می تواند با استفاده از جزئیات ورود به سیستم ، به حساب خود وارد شود') }}.</span>
+			   	 	<span>اگر مشتری قبلاً حسابی با ایمیل مخاطب مرتبط داشته باشد ، مشتری می تواند با استفاده از جزئیات ورود به سیستم ، به حساب خود وارد شود.</span>
 			   	</div> 
 			   	
 			   	<div class="alert alert-info">	
-			    	<span>{{ _lang('اگر مشتری هیچ حساب قبلی مرتبط با ایمیل مخاطب نداشته باشد ، مشتری باید حساب جدیدی را با استفاده از آن ایمیل تماس ایجاد کند') }}.</span>
+			    	<span>اگر مشتری هیچ حساب قبلی مرتبط با ایمیل مخاطب نداشته باشد ، مشتری باید حساب جدیدی را با استفاده از آن ایمیل تماس ایجاد کند.</span>
 			    </div>
 			</div>
 		</div>

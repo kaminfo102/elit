@@ -1,3 +1,23 @@
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src:url('../fonts/IranSans/IRANSansWeb_Light.eot');
+	src: url('../fonts/IranSans/IRANSansWeb_Lightd41d.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+	url('../fonts/IranSans/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+	url('../fonts/IranSans/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('../fonts/IranSans/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: BYekan;
+	font-style: normal;
+	font-weight: normal;
+	src:url('../fonts/BYekan/BYekan.eot');
+	src: url('../fonts/BYekan/BYekan.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		/*url('../fonts/BYekan/BYekan.woff2') format('woff2'),  !* FF39+,Chrome36+, Opera24+*!*/
+	url('../fonts/BYekan/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('../fonts/BYekan/BYekan.ttf') format('truetype');
+}
 .chat-online-users{
 	position: fixed;
 	width: 280px;
@@ -6,7 +26,7 @@
 	border: 1px solid #CCC;
 	border-top-left-radius: .25rem !important;
     border-top-right-radius: .25rem !important;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'BYekan';
 	z-index: 999;
 	border-bottom: none;
 }
@@ -133,7 +153,7 @@
 	border: 1px solid #CCC;
 	border-top-left-radius: .25rem !important;
     border-top-right-radius: .25rem !important;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'BYekan';
 	z-index: 999;
 	display: none;
 }

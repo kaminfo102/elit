@@ -238,9 +238,9 @@ class UserController extends Controller
 		if( $previous_package != $request->package_id ){
 			
 			if($company->package_type == 'monthly'){
-				$company->valid_to = jdate('Y-m-d', strtotime('+1 months'));
+				$company->valid_to = date('Y-m-d', strtotime('+1 months'));
 			}else{
-				$company->valid_to = jdate('Y-m-d', strtotime('+1 year'));
+				$company->valid_to = date('Y-m-d', strtotime('+1 year'));
 			}
 			
 			$company->staff_limit = unserialize($company->package->staff_limit)[$company->package_type];

@@ -1372,7 +1372,7 @@ if ( ! function_exists('update_package_limit'))
 {
     function update_package_limit( $feature, $limit = 1 ){
 		$company = Auth::user()->company;
-		if( $company->$feature != 'Yes' && $company->$feature != 'Unlimited'){
+		if( $company->$feature != 'بله' && $company->$feature != 'نامحدود'){
             $current_limit = (int) $company->$feature;
             $company->$feature = $current_limit - 1;
             $company->save();
@@ -1395,9 +1395,9 @@ if ( ! function_exists('has_feature'))
 
 		$company = Auth::user()->company;
 
-		if( $company->$feature == 'Yes' && $company->feature == 'Unlimited'){
+		if( $company->$feature == 'بله' && $company->feature == 'نامحدود'){
            return true;
-		}else if( $company->$feature == 'No' OR $company->$feature == null){
+		}else if( $company->$feature == 'خیر' OR $company->$feature == null){
 		   return false;
 		}else{
 			return true;
@@ -1416,7 +1416,7 @@ if ( ! function_exists('has_feature_limit'))
 
 		$current_limit = $company->$feature;
 		
-		if($current_limit == 'Unlimited'){
+		if($current_limit == 'نامحدود'){
 			return true;
 		}
 		
@@ -1438,7 +1438,7 @@ if ( ! function_exists('available_limit'))
 
 		$current_limit = $company->$feature;
 		
-		if($current_limit == 'Unlimited'){
+		if($current_limit == 'نامحدود'){
 			return true;
 		}
 		

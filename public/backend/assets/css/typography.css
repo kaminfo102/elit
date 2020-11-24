@@ -33,7 +33,7 @@
 ********************************************/
 
 body {
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'BYekan'!important;
 }
 
@@ -44,7 +44,8 @@ h5,
 h6 {
     margin: 0;
     font-family: 'IRANSans_Black'!important;
-    font-weight: bolder;
+    font-weight: 800;
+
 
 }
 h2{
@@ -52,8 +53,8 @@ h2{
 }
 p{
     font-family: 'IRANSans_Black'!important;
-    font-size: 12px;
-    line-height: 26px;
+    font-size: 10px;
+    line-height: 20px;
     color: #444;
     margin-bottom: 0;
 }
@@ -160,13 +161,13 @@ blockquote:before{
     content: '\f10d';
     font-family: fontawesome;
     color: #fff;
-    font-size: 32px;
+    font-size: 25px;
     position: absolute;
     left: 16px;
     top: 46px;
 }
 blockquote p{
-    font-size: 13px;
+    font-size: 10px;
     color: #fff;
 }
 .blockquote-footer{
