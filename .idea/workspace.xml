@@ -33,15 +33,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c166e375-9bd9-4670-ab1a-4316fb99c53c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code-generator.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/assets/css/chat-widget.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/assets/css/chat-widget.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/assets/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/assets/css/chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/assets/css/typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/assets/css/typography.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +276,7 @@
       <workItem from="1606137469629" duration="1866000" />
       <workItem from="1606140688820" duration="3622000" />
       <workItem from="1606198827898" duration="7357000" />
-      <workItem from="1606228555315" duration="3414000" />
+      <workItem from="1606228555315" duration="3508000" />
     </task>
     <servers />
   </component>
