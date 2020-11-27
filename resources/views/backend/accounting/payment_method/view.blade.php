@@ -4,11 +4,11 @@
 <div class="row">
 	<div class="col-12">
 	<div class="card">
-	<span class="d-none panel-heading">{{ _lang('View Payment Method') }}</span>
+	<span class="d-none panel-heading">نمایش روش پرداختی</span>
 
 	<div class="card-body">
 	  <table class="table table-bordered">
-		<tr><td>{{ _lang('Name') }}</td><td>{{ $paymentmethod->name }}</td></tr>	
+		<tr><td>نام</td><td>{{ $paymentmethod->name }}</td></tr>	
 	  </table>
 	</div>
   </div>

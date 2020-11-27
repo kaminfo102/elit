@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-md-6">
 	<div class="card">
-	<span class="panel-title d-none">ایجاد گروه مشتریان</span>
+	<span class="panel-title d-none">ایجاد گروه مخاطبین</span>
 
 	<div class="card-body">
 	  <form method="post" class="validate" autocomplete="off" action="{{url('contact_groups')}}" enctype="multipart/form-data">

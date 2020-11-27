@@ -35,9 +35,9 @@
 						<div class="col-md-6">
 					        <div class="form-group">
 					        	<a href="{{ route('lead_statuses.create') }}" data-reload="false" data-title="وضعیت جدید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
-						        <label class="control-label">{{ _lang('Lead Status') }}</label>	
+						        <label class="control-label">وضعیت لــید</label>	
 						        <select class="form-control select2-ajax" data-value="id" data-display="title" data-table="lead_statuses" data-where="1" name="lead_status_id" required>
-					                <option value="">{{ _lang('Select One') }}</option>
+					                <option value="">انتخاب کنید</option>
 								</select>
 							</div>
 					    </div>
@@ -88,7 +88,7 @@
 					        <div class="form-group">
 						        <label class="control-label">کشور</label>
 						        <select class="form-control select2" name="country">
-					                <option value="">{{ _lang('Select One') }}</option>
+					                <option value="">انتخاب کنید</option>
 									{{ get_country_list( old('country') ) }}
 								</select>
 							</div>

@@ -16,24 +16,24 @@
 					<div class="row">
 					    <div class="col-md-12">
 						  <div class="form-group">
-							<a href="{{ route('contact_groups.create') }}" data-reload="false" data-title="{{ _lang('Add Contact Group') }}" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> {{ _lang('Add New') }}</a>
-							<label class="control-label">{{ _lang('Group') }}</label>						
+							<a href="{{ route('contact_groups.create') }}" data-reload="false" data-title="گروه کخاطبین جدید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
+							<label class="control-label">گروه</label>
 							<select class="form-control select2-ajax" data-value="id" data-display="name" data-table="contact_groups" data-where="1" name="group_id" required>
-								<option value="">{{ _lang('- Select Group -') }}</option>
+								<option value="">انتخاب گروه</option>
 							</select>
 						 </div>
 						</div>
 				
 						<div class="col-md-12">
 						  <div class="form-group">
-							<label class="control-label">{{ _lang('Upload XLSX File') }}</label>						
+							<label class="control-label">آپلود فایل XLXS</label>
 							<input type="file" class="dropify" name="file" data-allowed-file-extensions="xlsx" required>
 						  </div>
 						</div>
 
 						<div class="col-md-12">
 						  <div class="form-group">
-							<button type="submit" class="btn btn-primary btn-xs">{{ _lang('Import Contacts') }}</button>
+							<button type="submit" class="btn btn-primary btn-xs">وارد کردن مخاطبین</button>
 						  </div>
 						</div>
 					</div>
@@ -44,15 +44,15 @@
 	    <div class="col-md-6">
 			<div class="card">
 			    <div class="card-header bg-primary text-white">
-				   <h5>{{ _lang('Instructions') }}</h5>
+				   <h5>دستورالعمل ها</h5>
 				</div>
 			    <div class="card-body">
 				   <ol class="pl-3">
-				      <li>{{ _lang('Only XLSX file are allowed.') }}</li>
-				      <li>{{ _lang('First row need to keep blank or use for column name only.') }}</li>
-				      <li>{{ _lang('Duplicate contact email will be skip.') }}</li>
-				      <li>{{ _lang('Required field must needed.') }}</li>
-				      <li><a href="{{ asset('public/xlsx_sample/contacts.xlsx') }}">{{ _lang('Download Sample File') }}</a></li>
+				      <li>فقط فایل با فرمت XLSX مجاز می باشد.</li>
+				      <li>باید سطر اول باید خالی یا عنوان ستون ها باشد.</li>
+				      <li>مخاطب با ایمیل تکراری وارد ننمایید.</li>
+				      <li>فیلدهای ضروری حتما باید تکمیل شوند.</li>
+				      <li><a href="{{ asset('public/xlsx_sample/contacts.xlsx') }}">دانــلود نمونه فایل</a></li>
 				   </ol>
 				</div>
 			</div>

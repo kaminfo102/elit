@@ -4,7 +4,7 @@
 
 <div class="row">
 	<div class="col-12">
-	    <a class="btn btn-primary btn-xs ajax-modal" data-title="{{ _lang('Add Expense') }}" href="{{ route('expense.create') }}"><i class="ti-plus"></i>  جــدید</a>
+	    <a class="btn btn-primary btn-xs ajax-modal" data-title="هزینه جدید" href="{{ route('expense.create') }}"><i class="ti-plus"></i>  جــدید</a>
 			
 		<div class="card mt-2">
 			<span class="d-none panel-title">لیست هزینه ها</span>

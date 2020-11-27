@@ -4,14 +4,14 @@
 	
 	<div class="col-md-12">
 		<div class="form-group">
-		   <label class="control-label">{{ _lang('Name') }}</label>						
+		   <label class="control-label">عنوان</label>
 		   <input type="text" class="form-control" name="name" value="{{ $role->name }}" required>
 		</div>
 	</div>
 
 	<div class="col-md-12">
 		<div class="form-group">
-		   <label class="control-label">{{ _lang('Description') }}</label>						
+		   <label class="control-label">توضیحات</label>
 		   <textarea class="form-control" name="description">{{ $role->description }}</textarea>
 		</div>
 	</div>
@@ -19,7 +19,7 @@
 	
 	<div class="form-group">
 	    <div class="col-md-12">
-		    <button type="submit" class="btn btn-primary">{{ _lang('Update') }}</button>
+		    <button type="submit" class="btn btn-primary">بروزرسانی</button>
 	    </div>
 	</div>
 </form>

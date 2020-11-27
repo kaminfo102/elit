@@ -4,7 +4,7 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		<a class="btn btn-primary btn-xs mb-2 ajax-modal" data-title="{{ _lang('Create New Lead') }}" href="{{ route('leads.create') }}"><i class="ti-plus"></i> جــدید</a>
+		<a class="btn btn-primary btn-xs mb-2 ajax-modal" data-title="لــید جــدید" href="{{ route('leads.create') }}"><i class="ti-plus"></i> جــدید</a>
 		<a class="btn btn-dark btn-xs mb-2" href="{{ route('leads.import') }}"><i class="ti-upload"></i> وارد کردن لیست</a>
 		<a class="btn btn-secondary btn-xs mb-2" href="{{ url('leads/kanban') }}"><i class="ti-layout-column3"></i> نمای کابان</a>
 		<div class="card mt-2">
@@ -57,7 +57,7 @@
 						<th>وضعیت</th>
 						<th>منبع</th>
 						<th>مربوط به</th>
-						<th class="text-center">عملیات</th>
+						<th>عملیات</th>
 					  </tr>
 					</thead>
 					<tbody>  

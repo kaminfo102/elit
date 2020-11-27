@@ -46,8 +46,8 @@
 
 						<div class="col-md-6">
 						    <div class="form-group">
-						    	<a href="{{ route('lead_sources.create') }}" data-reload="false" data-title="{{ _lang('New Lead Source') }}" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
-							    <label class="control-label">{{ _lang('Lead Source') }}</label>	
+						    	<a href="{{ route('lead_sources.create') }}" data-reload="false" data-title="منبع لــید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
+							    <label class="control-label">منبع لــید</label>	
 							    <select class="form-control select2-ajax" data-value="id" data-display="title" data-table="lead_sources" data-where="1" name="lead_source_id"  required>
 					                <option value="">انتخاب کنید</option>
 									{{ create_option('lead_sources', 'id', 'title', $lead->lead_source_id,array("company_id="=>company_id())) }}

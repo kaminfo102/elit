@@ -4,41 +4,41 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		<a class="btn btn-primary btn-xs ajax-modal" data-title="{{ _lang('Create Task') }}" href="{{ route('tasks.create') }}">
-			<i class="ti-plus"></i> {{ _lang('Add New') }}
+		<a class="btn btn-primary btn-xs ajax-modal" data-title="وظیفه جدید" href="{{ route('tasks.create') }}">
+			<i class="ti-plus"></i> جــدید
 		</a>
-		<a class="btn btn-secondary btn-xs" href="{{ url('tasks/kanban') }}"><i class="ti-layout-column3"></i> {{ _lang('Kanban View') }}</a>
+		<a class="btn btn-secondary btn-xs" href="{{ url('tasks/kanban') }}"><i class="ti-layout-column3"></i> نمایش به صورت کابان</a>
 		<div class="card mt-2">
 
-			<span class="panel-title d-none">{{ _lang('Task List') }}</span>
+			<span class="panel-title d-none">لیست وظایف</span>
 				
 			<div class="card-body">
 				<div class="row">
 					<div class="col-lg-3">
-                     	 <label>{{ _lang('Project') }}</label>
+                     	 <label>پروژه</label>
                      	 <select class="form-control select2 select-filter" name="project_id">
-                     	 	<option value="">{{ _lang('All Project') }}</option>
+                     	 	<option value="">همه پروژه ها</option>
 							{{ create_option('projects','id','name','',array('company_id=' => company_id())) }}
                      	 </select>
                      </div>	
 
                      <div class="col-lg-3">
-                     	 <label>{{ _lang('Assigned') }}</label>
+                     	 <label>اخـتصاص داده شـده</label>
                      	 <select class="form-control select2 select-filter" name="assigned_user_id">
-                             <option value="">{{ _lang('All User') }}</option>
+                             <option value="">همه کاربران</option>
                              {{ create_option('users','id','name','',array('company_id=' => company_id())) }}
                      	 </select>
                      </div>	
 
                      <div class="col-lg-3">
-                     	 <label>{{ _lang('Status') }}</label>
-                     	 <select class="form-control select2 select-filter" data-placeholder="{{ _lang('All Status') }}" name="task_status_id" multiple="true">
+                     	 <label>وضعیت ها</label>
+                     	 <select class="form-control select2 select-filter" data-placeholder="همه وضعیت ها" name="task_status_id" multiple="true">
 							{{ create_option('task_statuses','id','title','',array('company_id=' => company_id())) }}
                      	 </select>
                      </div>	
 
                      <div class="col-lg-3">
-                     	 <label>{{ _lang('Deadline') }}</label>
+                     	 <label>ضرب العجل</label>
                      	 <input type="text" class="form-control select-filter" id="date_range" autocomplete="off" name="date_range">
                      </div>	
 	
@@ -49,14 +49,14 @@
 				<table id="tasks_table" class="table table-bordered">
 					<thead>
 					    <tr>
-						    <th>{{ _lang('Title') }}</th>
-							<th>{{ _lang('Project') }}</th>
-							<th>{{ _lang('Priority') }}</th>
-							<th>{{ _lang('Task Status') }}</th>
-							<th>{{ _lang('Assigned User') }}</th>
-							<th>{{ _lang('Start Date') }}</th>
-							<th>{{ _lang('End Date') }}</th>
-							<th class="text-center">{{ _lang('Action') }}</th>
+						    <th>عنوان</th>
+							<th>پروژه</th>
+							<th>اهمیت</th>
+							<th>وضعیت</th>
+							<th>اختصاص به کاربر</th>
+							<th>تاریخ شروع</th>
+							<th>تاریخ پایان</th>
+							<th>عملیات</th>
 					    </tr>
 					</thead>
 					<tbody>

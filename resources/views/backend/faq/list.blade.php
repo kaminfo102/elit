@@ -5,7 +5,7 @@
 
 <div class="row">
 	<div class="col-md-12">
-		<a href="{{ route('faqs.create') }}" class="btn btn-primary btn-xs"><i class="ti-plus"></i> {{ _lang('Add New') }}</a>
+		<a href="{{ route('faqs.create') }}" class="btn btn-primary btn-xs"><i class="ti-plus"></i> جــدید</a>
 		<div class="card mt-2">
 			<div class="card-body">
 			 <div class="panel-title d-none">لیست پرسش و پاسخ</div>

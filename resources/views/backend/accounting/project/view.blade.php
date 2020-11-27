@@ -94,7 +94,7 @@
 														<span class="float-right">مجموع ساعات کارکرد</span>
 													</div>
 													<h2 class="text-right">
-														{{ time_from_seconds($hour_completed->total_seconds) }} {{ _lang('ساعت') }}
+														{{ time_from_seconds($hour_completed->total_seconds) }} ساعت
 													</h2>
 												</div>
 											</div>
@@ -372,9 +372,9 @@
 													<i class="fa fa-angle-down"></i></button>
 													<ul class="dropdown-menu">
 														<a class="dropdown-item" href="{{ action('InvoiceController@edit', $invoice->id) }}"><i class="fas fa-edit"></i> ویرایش</a>
-														<a class="dropdown-item" href="{{ action('InvoiceController@show', $invoice->id) }}" data-title="نمایش فاکتور" data-fullscreen="true"><i class="fas fa-eye"></i> {{ _lang('View') }}</a>
-														<a class="dropdown-item ajax-modal" href="{{ url('invoices/create_payment/'.$invoice->id) }}" data-title="پرداخت مبلغ"><i class="fas fa-credit-card"></i> {{ _lang('Make Payment') }}</a>
-														<a class="dropdown-item ajax-modal" href="{{ url('invoices/view_payment/'.$invoice->id) }}" data-title="نماشی پرداختی" data-fullscreen="true"><i class="fas fa-credit-card"></i> {{ _lang('View Payment') }}</a>
+														<a class="dropdown-item" href="{{ action('InvoiceController@show', $invoice->id) }}" data-title="نمایش فاکتور" data-fullscreen="true"><i class="fas fa-eye"></i> نــمایــش</a>
+														<a class="dropdown-item ajax-modal" href="{{ url('invoices/create_payment/'.$invoice->id) }}" data-title="پرداخت مبلغ"><i class="fas fa-credit-card"></i> پــرداخت</a>
+														<a class="dropdown-item ajax-modal" href="{{ url('invoices/view_payment/'.$invoice->id) }}" data-title="نماشی پرداختی" data-fullscreen="true"><i class="fas fa-credit-card"></i> نــمایش پرداختــی</a>
 														
 														<form action="{{action('InvoiceController@destroy', $invoice['id'])}}" method="post">									
 															{{ csrf_field() }}
@@ -397,7 +397,7 @@
                     <!--Start Expense tab-->
                     <div class="tab-pane" id="expense">
 
-                    	<a href="{{ route('expense.create') }}?related_to=projects&project_id={{ $project->id }}" data-title="{{ _lang('Add Expense') }}" class="btn btn-info btn-xs ajax-modal mb-4"><i class="ti-plus"></i> {{ _lang('Create New') }}</a>
+                    	<a href="{{ route('expense.create') }}?related_to=projects&project_id={{ $project->id }}" data-title="هزینه جدید" class="btn btn-info btn-xs ajax-modal mb-4"><i class="ti-plus"></i> جـــدید</a>
 
 						<div class="table-responsive">
 							<table id="expense-table" class="table table-bordered">

@@ -13,8 +13,8 @@
 
 			<div class="col-md-6">
 			  <div class="form-group">
-				<a href="{{ route('suppliers.create') }}" data-reload="false" data-title="{{ _lang('Add Supplier') }}" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> {{ _lang('Add New') }}</a>
-				<label class="control-label">{{ _lang('Supplier') }}</label>						
+				<a href="{{ route('suppliers.create') }}" data-reload="false" data-title="تامین کننده جدید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
+				<label class="control-label">تامین کننده</label>						
 				<select class="form-control select2-ajax" data-value="id" data-display="supplier_name" data-table="suppliers" data-where="1" name="supplier_id">
 					{{ create_option("suppliers","id","supplier_name",$item->product->supplier_id,array("company_id="=>company_id())) }}
 				</select>
@@ -23,23 +23,24 @@
 
 			<div class="col-md-6">
 				<div class="form-group">
-					<label class="control-label">{{ _lang('قیمت کالا').' '.currency() }}</label>
+					<label class="control-label">قیمت کالا ({{ currency() }}) </label>
 					<input type="text" class="form-control" name="product_cost" value="{{ $item->product->product_cost }}" required>
 				</div>
 			</div>
 
 			<div class="col-md-6">
 				<div class="form-group">
-					<label class="control-label">{{ _lang('قیمت فروش').' '.currency() }}</label>
+					<label class="control-label">قیمت فروش ({{ currency() }}) </label>
 					<input type="text" class="form-control" name="product_price" value="{{ $item->product->product_price }}" required>
 				</div>
 			</div>
 			
 			<div class="col-md-6">
 			  <div class="form-group">
-				<a href="{{ route('product_units.create') }}" data-reload="false" data-title="{{ _lang('Add Product Unit') }}" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> {{ _lang('Add New') }}</a>
-				<label class="control-label">{{ _lang('Product Unit') }}</label>						
+				<a href="{{ route('product_units.create') }}" data-reload="false" data-title="واحد کالای جدید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
+				<label class="control-label">واحد کالا</label>						
 				<select class="form-control select2-ajax" data-value="unit_name" data-display="unit_name" data-table="product_units" data-where="1" name="product_unit" required>
+					<option value="">انتخاب کنید</option>
 					{{ create_option("product_units","unit_name","unit_name",$item->product->product_unit,array("company_id="=>company_id())) }}
 				</select>
 			  </div>
@@ -50,8 +51,8 @@
 				<div class="form-group">
 					<label class="control-label">مالیات</label>
 					<select class="form-control" name="tax_method" required>
-						<option value="ندارد" {{ $item->product->tax_method == 'exclusive' ? 'selected' : '' }}>شامل مالیات نمی شود</option>
-						<option value="دارد" {{ $item->product->tax_method == 'inclusive' ? 'selected' : '' }}>شامل مالیات می شود</option>
+						<option value="ندارد" {{ $item->product->tax_method == 'شامل نمی شود' ? 'selected' : '' }}>شامل مالیات نمی شود</option>
+						<option value="دارد" {{ $item->product->tax_method == 'شامل می شود' ? 'selected' : '' }}>شامل مالیات می شود</option>
 					</select>	
 				</div>
 			</div>
@@ -72,6 +73,7 @@
 				<div class="form-group">
 					<label class="control-label">توضیحات</label>
 					<textarea class="form-control" name="description">{{ $item->product->description }}</textarea>
+					
 				</div>
 			</div>
 

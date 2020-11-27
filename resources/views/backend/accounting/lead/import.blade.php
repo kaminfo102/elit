@@ -64,7 +64,7 @@
 	    <div class="col-md-6">
 			<div class="card">
 			    <div class="card-header bg-primary text-white">
-				   <h5>{{ _lang('Instructions') }}</h5>
+				   <h5>دستورالعمل ها</h5>
 				</div>
 			    <div class="card-body">
 				   <ol class="pl-3">

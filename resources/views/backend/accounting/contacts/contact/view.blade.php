@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-md-3">
 		<div class="card">
-			<div class="d-none panel-title">نمایش مشتری</div>
+			<div class="d-none panel-title">نمایش مخاطب</div>
 
 			<div class="card-body p-3">
 				<div class="row">
@@ -178,7 +178,7 @@
 									<td>
 										<form action="{{ action('ProjectController@destroy', $project['id']) }}" class="text-center" method="post">
 											<a href="{{ action('ProjectController@show', $project['id']) }}" class="btn btn-primary btn-xs"><i class="ti-eye"></i></a>
-											<a href="{{ action('ProjectController@edit', $project['id']) }}" data-title="'. _lang('Update Project') .'" class="btn btn-warning btn-xs ajax-modal"><i class="ti-pencil"></i></a>
+											<a href="{{ action('ProjectController@edit', $project['id']) }}" data-title="'. 'بروزرسانی پروژه' .'" class="btn btn-warning btn-xs ajax-modal"><i class="ti-pencil"></i></a>
 											{{ csrf_field() }}
 											<input name="_method" type="hidden" value="DELETE">
 											<button class="btn btn-danger btn-xs btn-remove" type="submit"><i class="ti-eraser"></i></button>
@@ -266,11 +266,11 @@
 							<td class="text-center">
 
 								<div class="dropdown">
-									<button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">{{ _lang('Action') }}
+									<button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">عملیات
 									<i class="fa fa-angle-down"></i></button>
 									<ul class="dropdown-menu">
 										<a class="dropdown-item" href="{{ action('QuotationController@edit', $quotation->id) }}"><i class="fas fa-edit"></i> ویرایش</a>
-										<a class="dropdown-item" href="{{ action('QuotationController@show', $quotation->id) }}" data-title="{{ _lang('View Invoice') }}" data-fullscreen="true"><i class="fas fa-eye"></i> نمایش</a>
+										<a class="dropdown-item" href="{{ action('QuotationController@show', $quotation->id) }}" data-title="نمایش فاکتور" data-fullscreen="true"><i class="fas fa-eye"></i> نمایش</a>
 										<a class="dropdown-item" href="{{ action('QuotationController@convert_invoice', $quotation->id) }}"><i class="fas fa-credit-card"></i> تبدیل به فاکتور</a>
 										
 										<form action="{{action('QuotationController@destroy', $quotation->id)}}" method="post">									

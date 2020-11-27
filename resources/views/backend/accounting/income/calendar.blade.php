@@ -11,7 +11,7 @@
 <div class="row">
 	<div class="col-12">
 	<div class="card">
-	<span class="d-none panel-title">{{ _lang('Income Calendar') }}</span>
+	<span class="d-none panel-title">تقویم درآمد</span>
 
 	<div class="card-body">
 		<div id='income_calendar'></div>
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ],
 	  eventRender: function(info) {	
         $(info.el).addClass('ajax-modal');	  
-        $(info.el).data("title","{{ _lang('View Income') }}");	  
+        $(info.el).data("title","نمایش درآمد");
 		
 		/*var dotEl = info.el.getElementsByClassName('fc-event-dot')[0];
         if (dotEl) {

@@ -7,7 +7,7 @@
 	<div class="row">
 		<div class="col-md-8">
 		<div class="card">
-		<span class="d-none panel-title">مشتری جدید</span>
+		<span class="d-none panel-title">مخاطب جدید</span>
 
 		<div class="card-body">
 			{{ csrf_field() }}
@@ -32,14 +32,14 @@
 
 				<div class="col-md-6">
 				  <div class="form-group">
-					<label class="control-label">نام مشتری</label>						
+					<label class="control-label">نام </label>
 					<input type="text" class="form-control" name="contact_name" value="{{ old('contact_name') }}" required>
 				  </div>
 				</div>
 
 				<div class="col-md-6">
 				  <div class="form-group">
-					<label class="control-label">ایمیل مشتری</label>						
+					<label class="control-label">ایمیل </label>
 					<input type="text" class="form-control" name="contact_email" value="{{ old('contact_email') }}" required>
 				  </div>
 				</div>
@@ -165,15 +165,15 @@
 	 <div class="col-md-4">
 
 	 	<div class="card">
-			<h5 class="card-header bg-dark text-white mt-0 text-center">دسترسی به پورتال مشتری</h5>
+			<h5 class="card-header bg-dark text-white mt-0 text-center">دسترسی به پورتال مخاطب</h5>
 			<div class="card-body">
 			    
 			    <div class="alert alert-info">
-			   	 	<span>اگر مشتری قبلاً حسابی با ایمیل مخاطب مرتبط داشته باشد ، مشتری می تواند با استفاده از جزئیات ورود به سیستم ، به حساب خود وارد شود.</span>
+			   	 	<span>اگر مخاطب قبلاً حسابی با ایمیل مخاطب مرتبط داشته باشد ، مشتری می تواند با استفاده از جزئیات ورود به سیستم ، به حساب خود وارد شود.</span>
 			   	</div> 
 			   	
 			   	<div class="alert alert-info">	
-			    	<span>اگر مشتری هیچ حساب قبلی مرتبط با ایمیل مخاطب نداشته باشد ، مشتری باید حساب جدیدی را با استفاده از آن ایمیل تماس ایجاد کند.</span>
+			    	<span>اگر مخاطب هیچ حساب قبلی مرتبط با ایمیل مخاطب نداشته باشد ، مشتری باید حساب جدیدی را با استفاده از آن ایمیل تماس ایجاد کند.</span>
 			    </div>
 			</div>
 		</div>

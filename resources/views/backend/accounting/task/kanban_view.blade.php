@@ -5,11 +5,11 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		<a class="btn btn-primary btn-xs ajax-modal" data-title="{{ _lang('Create New Lead') }}" href="{{ route('tasks.create') }}"><i class="ti-plus"></i> {{ _lang('Add New') }}</a>
-		<a class="btn btn-secondary btn-xs" href="{{ url('tasks') }}"><i class="ti-layout-column3"></i> {{ _lang('List View') }}</a>
+		<a class="btn btn-primary btn-xs ajax-modal" data-title="لــید جــدید" href="{{ route('tasks.create') }}"><i class="ti-plus"></i> جــدیـد</a>
+		<a class="btn btn-secondary btn-xs" href="{{ url('tasks') }}"><i class="ti-layout-column3"></i> نمایش لیست</a>
 		<div class="card mt-2">
 		    
-			<span class="panel-title d-none">{{ _lang('Task Kanban') }}</span>
+			<span class="panel-title d-none">وظیفه کابان</span>
 			
 			@php $date_format = get_company_option('date_format','Y-m-d'); @endphp	
 			
@@ -30,7 +30,7 @@
 												@if(isset($task->assigned_user->name))
 													<img src="{{ asset('public/uploads/profile/'.$task->assigned_user->profile_picture) }}" class="kanban-avatar" data-toggle="tooltip" data-placement="top" title="{{ $task->assigned_user->name }}">
 												@else
-													<img src="{{ asset('public/uploads/profile/default.png') }}" class="kanban-avatar" data-toggle="tooltip" data-placement="top" title="{{ _lang('No User Assigned') }}">
+													<img src="{{ asset('public/uploads/profile/default.png') }}" class="kanban-avatar" data-toggle="tooltip" data-placement="top" title="به کاربری اختصاص داده نشده">
 												@endif
 												<a href="{{ action('TaskController@show', $task->id) }}" data-title="{{ $task->title }}"  class="lead-title ajax-modal">{{ $task->id.'#- '.$task->title }}</a>
 											</div>	
@@ -40,7 +40,7 @@
 
 								</ul>	
 								@if( isset($task) )	
-									<button data-status-id="{{ $status->id }}" data-task-id="{{ $task->id }}" class="btn btn-info btn-block load-more">{{ _lang('Load More') }}</button>
+									<button data-status-id="{{ $status->id }}" data-task-id="{{ $task->id }}" class="btn btn-info btn-block load-more">بیشتــر</button>
 							    @endif
 							</div>
 						</li>

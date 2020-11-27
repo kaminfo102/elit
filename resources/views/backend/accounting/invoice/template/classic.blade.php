@@ -67,7 +67,7 @@
 		
 		<div class="card clearfix">
 			
-			<span class="panel-title d-none">{{ _lang('View Invoice') }}</span>
+			<span class="panel-title d-none">نمایش فاکتور</span>
 			
 			<div class="card-body">
 				<div id="invoice-view">
@@ -82,8 +82,8 @@
 													<h3><b>{{ get_company_option('company_name') }}</b></h3>
 													{{ get_company_option('address') }}<br>
 													{{ get_company_option('email') }}<br>
-													{!! get_company_option('vat_id') != '' ? _lang('VAT ID').': '.clean(get_company_option('vat_id')).'<br>' : '' !!}
-													{!! get_company_option('reg_no')!= '' ? _lang('REG NO').': '.clean(get_company_option('reg_no')).'<br>' : '' !!}
+													{!! get_company_option('vat_id') != '' ? 'VAT ID'.': '.clean(get_company_option('vat_id')).'<br>' : '' !!}
+													{!! get_company_option('reg_no')!= '' ? 'REG NO'.': '.clean(get_company_option('reg_no')).'<br>' : '' !!}
 												</td>
 												<td class="float-right">
 													<img src="{{ get_company_logo() }}" class="wp-100">
@@ -98,27 +98,27 @@
 								<td colspan="2" class="pt-4">
 									<div class="row">
 										<div class="invoice-col-6 pt-3">
-											 <h5><b>{{ _lang('Invoice To') }}</b></h5>
+											 <h5><b>فاکتور برای</b></h5>
 											 {{ $client->contact_name }}<br>
 											 {{ $client->contact_email }}<br>
 											 {!! $client->company_name != '' ? clean($client->company_name).'<br>' : '' !!}
 											 {!! $client->address != '' ? clean($client->address).'<br>' : '' !!}
-											 {!! $client->vat_id != '' ? _lang('VAT ID').': '.clean($client->vat_id).'<br>' : '' !!}
-											 {!! $client->reg_no != '' ? _lang('REG NO').': '.clean($client->reg_no).'<br>' : '' !!}      
+											 {!! $client->vat_id != '' ?'VAT ID'.': '.clean($client->vat_id).'<br>' : '' !!}
+											 {!! $client->reg_no != '' ? 'REG NO'.': '.clean($client->reg_no).'<br>' : '' !!}      
 										</div>
 											
 										<!--Company Address-->
 										<div class="invoice-col-6 pt-3">	
 											<div class="d-inline-block float-md-right">
-												<h5><b>{{ _lang('Invoice Details') }}</b></h5>
+												<h5><b>جزئیات فاکتور</b></h5>
 												
-												<b>{{ _lang('Invoice') }} #:</b> {{ $invoice->invoice_number }}<br>
+												<b>فاکتور #:</b> {{ $invoice->invoice_number }}<br>
 												
-												<b>{{ _lang('Invoice Date') }}:</b> {{ date($date_format,strtotime( $invoice->invoice_date)) }}<br>
+												<b>تاریخ فاکتور:</b> {{ jdate($date_format,strtotime( $invoice->invoice_date)) }}<br>
 																								
-												<b>{{ _lang('Due Date') }}:</b> {{ date($date_format,strtotime( $invoice->due_date)) }}<br>							
+												<b>تاریخ سر رسید:</b> {{ jdate($date_format,strtotime( $invoice->due_date)) }}<br>							
 												
-												<b>{{ _lang('Payment Status') }}:</b> {{ _dlang(str_replace('_',' ',$invoice->status)) }}<br>
+												<b>وضعیت پرداختی:</b> {{ _dlang(str_replace('_',' ',$invoice->status)) }}<br>
 											</div>
 										</div>
 									</div>
@@ -136,13 +136,13 @@
 						<table class="table table-bordered mt-2" id="invoice-item-table">
 							 <thead class="base_color">
 								 <tr>
-									 <th>{{ _lang('Name') }}</th>
-									 <th class="text-center wp-100">{{ _lang('Quantity') }}</th>
-									 <th class="text-right">{{ _lang('Unit Cost') }}</th>
-									 <th class="text-right wp-100">{{ _lang('Discount') }}</th>
-									 <th class="no-print">{{ _lang('Tax method') }}</th>
-									 <th class="text-right">{{ _lang('Tax') }}</th>
-									 <th class="text-right">{{ _lang('Sub Total') }}</th>
+									 <th>نام</th>
+									 <th class="text-center wp-100">تعداد</th>
+									 <th class="text-right">قیمت</th>
+									 <th class="text-right wp-100">تخفیف</th>
+									 <th class="no-print">روش مالیات</th>
+									 <th class="text-right">مالیات</th>
+									 <th class="text-right">مجموع</th>
 								 </tr>
 							 </thead>
 							 <tbody id="invoice">
@@ -170,7 +170,7 @@
 						<table class="table table-bordered" id="invoice-summary-table">
 							 <tbody>
 									<tr>
-										 <td>{{ _lang('Tax') }}</td>
+										 <td>مالیات</td>
 										  <td class="text-right">
 											<span>{{ decimalPlace($invoice->tax_total, $currency) }}</span>
 											@if($client_currency != $base_currency)
@@ -179,7 +179,7 @@
 										 </td>
 									</tr>
 									<tr>
-										 <td><b>{{ _lang('Grand Total') }}</b></td>
+										 <td><b>جمع کل</b></td>
 										 <td class="text-right">
 											 <b>{{ decimalPlace($invoice->grand_total, $currency) }}</b>
 											 @if($client_currency != $base_currency)
@@ -188,7 +188,7 @@
 										 </td>
 									</tr>
 									<tr>
-										 <td>{{ _lang('Total Paid') }}</td>
+										 <td>مجموع پرداختی</td>
 										 <td class="text-right">
 											<span>{{ decimalPlace($invoice->paid, $currency) }}</span>
 											@if($client_currency != $base_currency)
@@ -198,7 +198,7 @@
 									</tr>
 									@if($invoice->status != 'Paid')
 										<tr>
-											 <td>{{ _lang('Amount Due') }}</td>
+											 <td>مبلغ سر رسید</td>
 											 <td class="text-right">
 												<span>{{ decimalPlace(($invoice->grand_total - $invoice->paid), $currency) }}</span>
 												@if($client_currency != $base_currency)
@@ -220,19 +220,19 @@
 							<table class="table table-bordered" id="invoice-payment-history-table">
 								<thead class="base_color">
 									<tr>
-									   <td colspan="4" class="text-center"><b>{{ _lang('Payment History') }}</b></td>
+									   <td colspan="4" class="text-center"><b>تاریخچه پرداختی</b></td>
 									</tr>
 									<tr>
-										<th>{{ _lang('Date') }}</th>
-										<th>{{ _lang('Account') }}</th>
-										<th class="text-right">{{ _lang('Amount') }}</th>
-										<th>{{ _lang('Payment Method') }}</th>
+										<th>تاریخ</th>
+										<th>حساب</th>
+										<th>مبلغ</th>
+										<th>روش پرداخت</th>
 									</tr>
 								</thead>
 								<tbody>  
 								    @foreach($transactions as $transaction)
 										<tr id="transaction-{{ $transaction->id }}">
-											<td>{{ date($date_format, strtotime($transaction->trans_date)) }}</td>
+											<td>{{ jdate($date_format, strtotime($transaction->trans_date)) }}</td>
 											<td>{{ $transaction->account->account_title.' - '.$transaction->account->account_currency }}</td>
 											<td class="text-right">{{ decimalPlace($transaction->amount, currency($transaction->account->account_currency)) }}</td>
 											<td>{{ $transaction->payment_method->name }}</td>

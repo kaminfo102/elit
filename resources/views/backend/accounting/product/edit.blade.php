@@ -20,8 +20,8 @@
 						
 						<div class="col-md-6">
 						  <div class="form-group">
-							<a href="{{ route('suppliers.create') }}" data-reload="false" data-title="تامین کننده جدید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جدید</a>
-							<label class="control-label">{{ _lang('Supplier') }}</label>						
+							<a href="{{ route('suppliers.create') }}" data-reload="false" data-title="تامین کننده جدید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
+							<label class="control-label">تامین کننده</label>						
 							<select class="form-control select2-ajax" data-value="id" data-display="supplier_name" data-table="suppliers" data-where="1" name="supplier_id">
 								{{ create_option("suppliers","id","supplier_name",$item->product->supplier_id,array("company_id="=>company_id())) }}
 							</select>
@@ -30,14 +30,14 @@
 
 						<div class="col-md-6">
 						<div class="form-group">
-							<label class="control-label">{{ _lang('قیمت خرید').' '.currency() }}</label>
+							<label class="control-label">قیمت خرید {{ (currency()) }}</label>
 							<input type="text" class="form-control" name="product_cost" value="{{ $item->product->product_cost }}" required>
 						</div>
 						</div>
 
 						<div class="col-md-6">
 						<div class="form-group">
-							<label class="control-label">{{ _lang('قیمت فروش').' '.currency() }}</label>
+							<label class="control-label">قیمت فروش {{ (currency()) }}</label>
 							<input type="text" class="form-control" name="product_price" value="{{ $item->product->product_price }}" required>
 						</div>
 						</div>

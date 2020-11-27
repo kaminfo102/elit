@@ -36,8 +36,8 @@
 									<input name="_method" type="hidden" value="DELETE">
 									
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('LeadSourceController@edit', $leadsource['id']) }}" data-title="{{ _lang('Update Lead Source') }}" class="dropdown-item ajax-modal"><i class="mdi mdi-pencil"></i> ویرایش</a>
-										<a href="{{ action('LeadSourceController@show', $leadsource['id']) }}" data-title="{{ _lang('View Lead Source') }}" class="dropdown-item ajax-modal"><i class="mdi mdi-eye"></i> نمایش</a>
+										<a href="{{ action('LeadSourceController@edit', $leadsource['id']) }}" data-title="بروزرسانی منبع لیید" class="dropdown-item ajax-modal"><i class="mdi mdi-pencil"></i> ویرایش</a>
+										<a href="{{ action('LeadSourceController@show', $leadsource['id']) }}" data-title="نمایش منبع لیید" class="dropdown-item ajax-modal"><i class="mdi mdi-eye"></i> نمایش</a>
 										<button class="btn-remove dropdown-item" type="submit"><i class="mdi mdi-delete"></i> حــذف</button>
 									</div>
 								  </form>

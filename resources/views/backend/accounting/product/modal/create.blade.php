@@ -23,14 +23,14 @@
 
 			<div class="col-md-6">
 			  <div class="form-group">
-				<label class="control-label">{{ _lang(' قیمت خرید').' '.currency() }}</label>
+				<label class="control-label"> قیمت خرید ({{ currency() }})</label>
 				<input type="text" class="form-control" name="product_cost" value="{{ old('product_cost') }}" required>
 			  </div>
 			</div>
 
 			<div class="col-md-6">
 			  <div class="form-group">
-				<label class="control-label">{{ _lang('قیمت فروش') .' '.currency() }}</label>
+				<label class="control-label">قیمت فروش({{ currency() }})</label>
 				<input type="text" class="form-control" name="product_price" value="{{ old('product_price') }}" required>
 			  </div>
 			</div>
@@ -49,7 +49,7 @@
 				<div class="form-group">
 				<label class="control-label">مالیات</label>
 				<select class="form-control" name="tax_method" required>
-						<option value="ندارد">شامل مالیات نمی شود</option>
+						<option value="ندارد"> شامل مالیات نمی شود </option>
 						<option value="دارد">شامل مالیات می شود</option>
 				</select>	
 				</div>

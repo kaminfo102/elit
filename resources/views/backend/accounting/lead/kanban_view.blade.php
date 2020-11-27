@@ -29,7 +29,7 @@
 										<div class="card">
 											<div class="card-body">
 												<img src="{{ asset('public/uploads/profile/'.$lead->assigned_user->profile_picture) }}" class="kanban-avatar" data-toggle="tooltip" data-placement="top" title="{{ $lead->assigned_user->name }}">
-												<a href="{{ action('LeadController@show', $lead->id) }}" data-title="{{ _lang('View Lead Details') }}"  class="lead-title ajax-modal">{{ $lead->id.'#- '.$lead->name }}</a>
+												<a href="{{ action('LeadController@show', $lead->id) }}" data-title="نمایش جزئیات لــید"  class="lead-title ajax-modal">{{ $lead->id.'#- '.$lead->name }}</a>
 												<div class="mt-2">
 													<small>منبع: {{ $lead->lead_source->title }}</small><br>
 													<small>ایجاد شده در تاریخ: {{ jdate($date_format, strtotime($lead->created_at)) }}</small>

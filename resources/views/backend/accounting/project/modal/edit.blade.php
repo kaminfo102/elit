@@ -14,16 +14,16 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="form-group">
-			   <label class="control-label">{{ _lang('Project Name') }}</label>						
+			   <label class="control-label">نام پروژه</label>						
 			   <input type="text" class="form-control" name="name" value="{{ $project->name }}" required>
 			</div>
 		</div>
 
 		<div class="col-md-6">
 			<div class="form-group">
-				<label class="control-label">{{ _lang('Client') }}</label>						
+				<label class="control-label">کلاینت</label>						
 				<select class="form-control select2" name="client_id"  required>
-					<option value="">{{ _lang('Select One') }}</option>
+					<option value="">انتخاب کنید</option>
 					{{ create_option('contacts','id','contact_name', $project->client_id,array('company_id='=>company_id())) }}
 				</select>
 			</div>

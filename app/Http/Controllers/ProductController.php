@@ -64,7 +64,7 @@ class ProductController extends Controller
 
             DB::commit();
 
-            return back()->with('success',$new_rows.' '._lang('سطرها با موفقیت وارد شدند'));
+            return back()->with('success',$new_rows.' '.'سطرها با موفقیت وارد شدند');
         }           
         
     }
@@ -142,9 +142,9 @@ class ProductController extends Controller
 		DB::commit();
         
 		if(! $request->ajax()){
-           return redirect('products/create')->with('success', _lang('با موفقیت ذخیره شد'));
+           return redirect('products/create')->with('success', 'با موفقیت ذخیره شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'store','message'=>_lang('با موفقیت ذخیره شد'),'data'=>$product]);
+		   return response()->json(['result'=>'success','action'=>'store','message'=>'با موفقیت ذخیره شد','data'=>$product]);
 		}
         
    }
@@ -241,17 +241,17 @@ class ProductController extends Controller
 			DB::commit();
         }else{
             if(! $request->ajax()){
-                return redirect('products')->with('error', _lang('به روز رسانی نا موفق بود!'));
+                return redirect('products')->with('error', 'به روز رسانی نا موفق بود!');
             }else{
-                return response()->json(['result'=>'error','message'=>_lang('به روز رسانی نا موفق بود!')]);
+                return response()->json(['result'=>'error','message'=>'به روز رسانی نا موفق بود!']);
             }
         }
 
 		
 		if(! $request->ajax()){
-           return redirect('products')->with('success', _lang('به روز رسانی با موفقیت انجام شد'));
+           return redirect('products')->with('success', 'به روز رسانی با موفقیت انجام شد');
         }else{
-		   return response()->json(['result'=>'success','action'=>'update', 'message'=>_lang('به روز رسانی با موفقیت انجام شد'),'data'=>$product]);
+		   return response()->json(['result'=>'success','action'=>'update', 'message'=>'به روز رسانی با موفقیت انجام شد','data'=>$product]);
 		}
 	    
     }
@@ -271,7 +271,7 @@ class ProductController extends Controller
         $product = Product::where("item_id",$id);
         $product->delete();
 		DB::commit();
-        return redirect('products')->with('success',_lang('با موفقیت حذف شد'));
+        return redirect('products')->with('success','با موفقیت حذف شد');
     }
 
 

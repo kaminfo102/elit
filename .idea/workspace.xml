@@ -32,7 +32,149 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c166e375-9bd9-4670-ab1a-4316fb99c53c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/uploads/profile/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/profile/profile_1606364034.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/12.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/3423sdfsdfds (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/3423sdfsdfds (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/3423sdfsdfds (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/3423sdfsdfds (3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/3423sdfsdfds (4).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/dfdfdsf1604676695.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/fgsfgds.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/fgsfgds.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1603869157.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1603869325.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1603869339.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1603869817.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1603870315.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1604132373.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1604686129.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1604686346.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1604735362.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1604735613.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1604735621.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1604762976.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1604763175.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605103829.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605103855.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605132738.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605163427.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605163777.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605167538.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605167694.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605535889.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605866623.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605867849.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1605957107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1606040831.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1606199632.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1606200076.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_1606212080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/profile/profile_2020-10-28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/chart_of_account/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/chart_of_account/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/company_email_template/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/import.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/import.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact_group/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact_group/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact_group/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact_group/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact_group/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact_group/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact_group/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/contacts/contact_group/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/expense/calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/expense/calendar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/expense/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/expense/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/expense/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/expense/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/expense/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/expense/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/expense/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/expense/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/expense/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/expense/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/expense/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/expense/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/expense/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/expense/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/general_settings/crm_settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/general_settings/crm_settings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/general_settings/lead_source/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/general_settings/lead_source/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/general_settings/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/general_settings/settings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/income/calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/income/calendar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/income/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/income/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/income/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/income/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/income/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/income/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/income/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/income/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/income/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/income/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/income/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/income/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/income/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/income/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/invoice-actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/invoice-actions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/template/classic-red.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/template/classic-red.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/template/classic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/invoice/template/classic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/lead/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/lead/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/lead/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/lead/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/lead/import.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/lead/import.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/lead/kanban_view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/lead/kanban_view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/lead/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/lead/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/lead/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/lead/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/payment_method/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/product/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/product/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/product/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/product/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/product/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/product/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/product/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/project/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/project/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/project/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/project/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/role/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/staff/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/staff/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/supplier/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/task/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/task/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/task/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/task/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/task/kanban_view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/task/kanban_view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/task/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/task/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/task/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/task/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/task/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/task/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/task/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/task/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/task/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/task/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/tax/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/tax/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/tax/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/tax/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/tax/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/tax/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/tax/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/tax/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/tax/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/tax/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/tax/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/tax/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/tax/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/tax/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/timesheet/modal/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/timesheet/modal/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/timesheet/modal/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/timesheet/modal/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/timesheet/modal/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/timesheet/modal/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/accounting/transfer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/accounting/transfer/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/email/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/email/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/faq/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/faq/list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +334,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/backend/assets/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -277,6 +419,10 @@
       <workItem from="1606140688820" duration="3622000" />
       <workItem from="1606198827898" duration="7357000" />
       <workItem from="1606228555315" duration="3508000" />
+      <workItem from="1606479359142" duration="29000" />
+      <workItem from="1606479390235" duration="286000" />
+      <workItem from="1606479825159" duration="108000" />
+      <workItem from="1606479952209" duration="8372000" />
     </task>
     <servers />
   </component>
@@ -308,10 +454,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="598" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606037519557">
+    <state x="598" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606479635515">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="598" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1606037519557" />
+    <state x="598" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1606479635515" />
     <state x="0" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604509518287">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -320,14 +466,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605873132185" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1605625820108">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1606479386876">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605625820108" />
-    <state x="461" y="170" width="1356" height="711" key="SettingsEditor" timestamp="1606140672062">
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1606479386876" />
+    <state x="461" y="170" width="1356" height="711" key="SettingsEditor" timestamp="1606479937333">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="170" width="1356" height="711" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1606140672062" />
+    <state x="461" y="170" width="1356" height="711" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1606479937333" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1604394143211">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

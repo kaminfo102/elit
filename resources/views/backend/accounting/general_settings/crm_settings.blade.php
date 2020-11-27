@@ -89,8 +89,8 @@
 		  <div id="lead_source" class="tab-pane">
 			  <div class="card">
 				<div class="card-body">
-				    <h5 class="card-title"><span>{{ _lang('Lead Sources') }}</span>
-						<button class="btn btn-primary btn-xs float-right modal-add ajax-modal" data-title="{{ _lang('Add Lead Source') }}" data-href="{{ route('lead_sources.create') }}"><i class="ti-plus"></i> جــدید</button>
+				    <h5 class="card-title"><span>منابع لیید</span>
+						<button class="btn btn-primary btn-xs float-right modal-add ajax-modal" data-title="منبع لیید جدید" data-href="{{ route('lead_sources.create') }}"><i class="ti-plus"></i> جــدید</button>
 					</h5>
 					<table id="lead_source_table" class="table table-bordered data-table">
 						<thead>
@@ -115,8 +115,8 @@
 										<input name="_method" type="hidden" value="DELETE">
 										
 										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-											<a href="{{ action('LeadSourceController@edit', $leadsource['id']) }}" data-title="{{ _lang('Update Lead Source') }}" class="dropdown-item ajax-modal"><i class="mdi mdi-pencil"></i> ویرایش</a>
-											<a href="{{ action('LeadSourceController@show', $leadsource['id']) }}" data-title="{{ _lang('View Lead Source') }}" class="dropdown-item ajax-modal"><i class="mdi mdi-eye"></i> نمایش</a>
+											<a href="{{ action('LeadSourceController@edit', $leadsource['id']) }}" data-title="ویرایش منبع لیید" class="dropdown-item ajax-modal"><i class="mdi mdi-pencil"></i> ویرایش</a>
+											<a href="{{ action('LeadSourceController@show', $leadsource['id']) }}" data-title="نمایش منبع لیید" class="dropdown-item ajax-modal"><i class="mdi mdi-eye"></i> نمایش</a>
 											<button class="dropdown-item" type="submit"><i class="mdi mdi-delete"></i> حــذف</button>
 										</div>
 									  </form>
@@ -154,8 +154,8 @@
 			<div id="task_status" class="tab-pane">
 				<div class="card">
 				  <div class="card-body">
-					 <h5 class="card-title"><span>وضعیت کار</span>
-						<button class="btn btn-primary btn-xs float-right modal-add ajax-modal" data-title="{{ _lang('New Task Status') }}" data-href="{{ route('task_statuses.create') }}"><i class="ti-plus"></i> جــدید</button>
+					 <h5 class="card-title"><span>وضعیت وظیفه</span>
+						<button class="btn btn-primary btn-xs float-right modal-add ajax-modal" data-title="وضعیت وظیفه جدید" data-href="{{ route('task_statuses.create') }}"><i class="ti-plus"></i> جــدید</button>
 					 </h5>
 					 <table id="task_status_table" class="table table-bordered data-table">
 						<thead>
@@ -185,7 +185,7 @@
 									<input name="_method" type="hidden" value="DELETE">
 									
 									<div class="dropdown-menu" aria-labelledby="lead_status_dropdown">
-										<button data-href="{{ action('TaskStatusController@edit', $taskstatus['id']) }}" data-title="{{ _lang('Update Lead Status') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="mdi mdi-pencil"></i> ویــرایش</button>
+										<button data-href="{{ action('TaskStatusController@edit', $taskstatus['id']) }}" data-title="ویرایش" class="dropdown-item dropdown-edit ajax-modal"><i class="mdi mdi-pencil"></i> ویــرایش</button>
 										<button class="dropdown-item" type="submit"><i class="mdi mdi-delete"></i> حــذف</button>
 									</div>
 								  </form>

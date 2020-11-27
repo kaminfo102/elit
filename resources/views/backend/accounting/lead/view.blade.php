@@ -156,9 +156,9 @@
 							    @foreach($projectfiles as $projectfile)
 							    <tr data-id="row_{{ $projectfile->id }}">
 							    	<td class="created_at">{{ jdate("$date_format $time_format", strtotime($projectfile->created_at)) }}</td>
-									<td class='user_id'><a href="{{action('StaffController@show', $projectfile->user->id)}}" data-title="{{ _lang('نمایش اطلاعات کارمند') }}"class="ajax-modal-2">{{ $projectfile->user->name }}</a></td>
+									<td class='user_id'><a href="{{action('StaffController@show', $projectfile->user->id)}}" data-title="نمایش اطلاعات کارمند"class="ajax-modal-2">{{ $projectfile->user->name }}</a></td>
 									<td class='file'><a href="{{ url('leads/download_file/'.$projectfile->file) }}">{{ $projectfile->file }}</a></td>
-									<td class="remove text-center"><a class="ajax-get-remove" href="{{ url('leads/delete_file/'.$projectfile->id) }}">{{ _lang('Remove') }}</a></td>
+									<td class="remove text-center"><a class="ajax-get-remove" href="{{ url('leads/delete_file/'.$projectfile->id) }}">حــذف</a></td>
 							    </tr>
 							    @endforeach
 							    <tr data-id="files_id">

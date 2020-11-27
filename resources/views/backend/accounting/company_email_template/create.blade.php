@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-lg-12">
 		<div class="card">
-		<span class="d-none panel-title">{{ _lang('Add Email Template') }}</span>
+		<span class="d-none panel-title">قالب ایمیل جدید</span>
 
 			<div class="card-body">
 				<form method="post" class="validate" autocomplete="off" action="{{url('company_email_template')}}" enctype="multipart/form-data">
@@ -13,24 +13,24 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="control-label">{{ _lang('Related To') }}</label>						
+								<label class="control-label">مربوط به</label>
 								<select class="form-control auto-select" data-selected="{{ old('related_to','invoice') }}" name="related_to" id="email_template_related_to" required>
-									<option value="invoice">{{ _lang('Invoice') }}</option>
-									<option value="quotation">{{ _lang('Quotation') }}</option>
+									<option value="invoice">فاکتور</option>
+									<option value="quotation">پیش فاکتور</option>
 								</select>
 							</div>
 						</div>
 						
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="control-label">{{ _lang('Name') }}</label>						
+								<label class="control-label">نام</label>
 								<input type="text" class="form-control" name="name" value="{{ old('name') }}" required>
 							</div>
 						</div>
 
 						<div class="col-md-12">
 							<div class="form-group">
-								<label class="control-label">{{ _lang('Subject') }}</label>						
+								<label class="control-label">موضوع</label>
 								<input type="text" class="form-control" name="subject" value="{{ old('subject') }}" required>
 							</div>
 						</div>
@@ -42,14 +42,14 @@
 
 						<div class="col-md-12">
 							<div class="form-group">
-								<label class="control-label">{{ _lang('Body') }}</label>						
+								<label class="control-label">متن</label>
 								<textarea class="form-control summernote" name="body">{{ old('body') }}</textarea>
 							</div>
 						</div>
 		
 						<div class="col-md-12">
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary">{{ _lang('Save') }}</button>
+								<button type="submit" class="btn btn-primary">ذخیره</button>
 							</div>
 						</div>
 					</div>

@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-12">
 		<div class="card">
-			<span class="d-none panel-title">{{ _lang('بروزرسانی فاکتور') }}</span>
+			<span class="d-none panel-title">بروزرسانی فاکتور</span>
 
 			<div class="card-body">
 				<form method="post" class="validate" autocomplete="off" action="{{ action('InvoiceController@update', $id) }}" enctype="multipart/form-data">
@@ -106,12 +106,12 @@
 										<tr>
 											<th>نام</th>
 											<th class="text-center wp-100">تعداد</th>
-											<th class="text-right">{{ _lang('قیمت').' '.$currency }}</th>
-											<th class="text-right wp-100">{{ _lang('تخفیف').' '.$currency }}</th>
-											<th class="text-right">{{ _lang('روش مالیات') }}</th>
-											<th class="text-right">{{ _lang('مالیات').' '.$currency }}</th>
-											<th class="text-right">{{ _lang('Sub Total').' '.$currency }}</th>
-											<th class="text-center">{{ _lang('عملیات') }}</th>
+											<th class="text-right">قیمت {{ (currency()) }}</th>
+											<th class="text-right wp-100">تخفیف {{ (currency()) }}</th>
+											<th class="text-right">روش مالیات</th>
+											<th class="text-right">مالیات {{ (currency()) }}</th>
+											<th class="text-right">Sub Total {{ (currency()) }}</th>
+											<th class="text-center">عملیات</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -146,7 +146,7 @@
 									</tbody>
 									<tfoot class="tfoot active">
 										<tr>
-											<th>{{ _lang('مجموع') }}</th>
+											<th>مجموع</th>
 											<th class="text-center" id="total-qty">0</th>
 											<th></th>
 											<th class="text-right" id="total-discount">0.00</th>
@@ -164,7 +164,7 @@
 								   <thead class="thead-light">
 									  <tr>
 										 <th>
-											{{ _lang('مبلغ تبدیل شده') }} ({{ _lang('واحد پول کلاینت') }} - <span class="client_currency">{{ base_currency() }}</span>)
+											مبلغ تبدیل شده واحد پول کلاینت - <span class="client_currency">{{ base_currency() }}</span>)
 											&emsp;<span id="converted_amount">{{ $currency }} 0.00</span>
 										 </th>
 									  </tr>
@@ -177,7 +177,7 @@
 				
 						<div class="col-md-12">
 							<div class="form-group">
-								<label class="control-label">{{ _lang('یادداشت') }}</label>
+								<label class="control-label">یادداشت</label>
 								<textarea class="form-control" rows="4" name="note">{{ $invoice->note }}</textarea>
 							</div>
 						</div>
@@ -223,37 +223,37 @@
 
 	    var form = `<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label">{{ _lang('روش مالیات') }}</label>
+							<label class="control-label">روش مالیات</label>
 							<select class="form-control float-field" id="modal-tax_method">
-	                            <option value="">{{ _lang('بدون مالیات') }}</option>
-	                            <option value="inclusive">{{ _lang('شامل می شود') }}</option>
-	                            <option value="exclusive">{{ _lang('شامل نمی شود') }}</option>
+	                            <option value="">بدون مالیات</option>
+	                            <option value="inclusive">شامل می شود</option>
+	                            <option value="exclusive">شامل نمی شود</option>
 							</select>
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label">{{ _lang('واحد قیمت') }}</label>
+							<label class="control-label">واحد قیمت</label>
 							<input type="number" class="form-control" value="${ c_tax_method == 'exclusive' ? c_unit_cost : c_sub_total }" id="modal-unit_cost">
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label">{{ _lang('تعداد') }}</label>
+							<label class="control-label">تعداد</label>
 							<input type="number" class="form-control" value="${quantity}" id="modal-quantity">
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label">{{ _lang('تخفیف').' '.currency() }}</label>
+							<label class="control-label">تخفیف {{ (currency()) }}</label>
 							<input type="text" class="form-control float-field" value="${c_discount}" id="modal-discount">
 						</div>
 					</div>
 					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label">{{ _lang('مالیات') }}</label>
+							<label class="control-label">مالیات</label>
 							<select class="form-control" id="modal-tax_id">
-	                            <option value="">{{ _lang('بدون مالیات') }}</option>
+	                            <option value="">بدون مالیات</option>
 								@foreach(App\Tax::where("company_id",company_id())->get() as $tax)
 									 <option value="{{ $tax->id }}" data-tax-type="{{ $tax->type }}" data-tax-rate="{{ $tax->rate }}">{{ $tax->tax_name }} - {{ $tax->type =='percent' ? $tax->rate.' %' : $tax->rate }}</option>
 								@endforeach
@@ -263,18 +263,18 @@
 
 					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label">{{ _lang('Description') }}</label>						
+							<label class="control-label">توضیحات</label>						
 							<textarea class="form-control" id="modal-description">${c_description}</textarea>
 						</div>
 					</div>
 
 					<div class="col-md-12">
 						<div class="form-group">
-							<button type="button" id="update-product" class="btn btn-primary">{{ _lang('Save') }}</button>
+							<button type="button" id="update-product" class="btn btn-primary">ذخیره</button>
 						</div>
 					</div>`;
 
-	    $("#main_modal .modal-title").html("{{ _lang('بروزرسانی محصول') }}");
+	    $("#main_modal .modal-title").html("بروزرسانی کالا");
 	    $("#main_modal .modal-body").html(form);
 	    $("#modal-tax_method").val(c_tax_method);
 	    $("#modal-tax_id").val(c_tax_id);

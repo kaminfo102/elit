@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-md-6">
 		<div class="card">
-			<span class="d-none panel-title">{{ _lang('Update Payment Method') }}</span>
+			<span class="d-none panel-title">بروزرسانی روش پرداخت</span>
 
 			<div class="card-body">
 			  <div class="col-md-6">
@@ -14,14 +14,14 @@
 					
 					<div class="col-md-12">
 					 <div class="form-group">
-						<label class="control-label">{{ _lang('Name') }}</label>						
+						<label class="control-label">نام</label>						
 						<input type="text" class="form-control" name="name" value="{{ $paymentmethod->name }}" required>
 					 </div>
 					</div>
 
 					<div class="col-md-12">
 					  <div class="form-group">
-						<button type="submit" class="btn btn-primary">{{ _lang('Update') }}</button>
+						<button type="submit" class="btn btn-primary">بروزرسانی</button>
 					  </div>
 					</div>
 				</form>

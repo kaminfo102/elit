@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-md-6">
 	<div class="card">
-	<span class="d-none panel-title">{{ _lang('Add Tax') }}</span>
+	<span class="d-none panel-title">مالیات جدید</span>
 
 	<div class="card-body">
 	  <form method="post" class="validate" autocomplete="off" action="{{ url('taxs') }}" enctype="multipart/form-data">
@@ -12,24 +12,24 @@
 		
 		<div class="col-md-12">
 		  <div class="form-group">
-			<label class="control-label">{{ _lang('Tax Name') }}</label>						
+			<label class="control-label">نام</label>
 			<input type="text" class="form-control" name="tax_name" value="{{ old('tax_name') }}" required>
 		  </div>
 		</div>
 
 		<div class="col-md-12">
 		  <div class="form-group">
-			<label class="control-label">{{ _lang('Rate') }}</label>						
+			<label class="control-label">نرخ</label>
 			<input type="text" class="form-control float-field" name="rate" value="{{ old('rate') }}" required>
 		  </div>
 		</div>
 
 		<div class="col-md-12">
 			<div class="form-group">
-			<label class="control-label">{{ _lang('Type') }}</label>						
+			<label class="control-label">نوع</label>
 				<select class="form-control" name="type" required>
-					<option value="fixed">{{ _lang('Fixed') }}</option>
-					<option value="percent">{{ _lang('Percentage %') }}</option>
+					<option value="fixed">ثابت</option>
+					<option value="percent">درصد %</option>
 				</select>
 			</div>
 		</div>

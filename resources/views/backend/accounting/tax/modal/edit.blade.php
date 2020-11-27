@@ -4,14 +4,14 @@
 	
 	<div class="col-md-12">
 	 <div class="form-group">
-		<label class="control-label">{{ _lang('Tax Name') }}</label>						
+		<label class="control-label">نام</label>
 		<input type="text" class="form-control" name="tax_name" value="{{ $tax->tax_name }}" required>
 	 </div>
 	</div>
 
 	<div class="col-md-12">
 	 <div class="form-group">
-		<label class="control-label">{{ _lang('Rate') }}</label>						
+		<label class="control-label">نرخ</label>
 		<input type="text" class="form-control float-field" name="rate" value="{{ $tax->rate }}" required>
 	 </div>
 	</div>
@@ -19,10 +19,10 @@
 	
 	<div class="col-md-12">
 		<div class="form-group">
-		<label class="control-label">{{ _lang('Type') }}</label>						
+		<label class="control-label">نوع</label>
 				<select class="form-control" name="type" required>
-						<option value="fixed" {{ $tax->type == 'fixed' ? 'selected' : '' }}>{{ _lang('Fixed') }}</option>
-						<option value="percent" {{ $tax->type == 'percent' ? 'selected' : '' }}>{{ _lang('Percentage %') }}</option>
+						<option value="fixed" {{ $tax->type == 'fixed' ? 'selected' : '' }}>ثابت</option>
+						<option value="percent" {{ $tax->type == 'percent' ? 'selected' : '' }}>درصد</option>
 				</select>
 		</div>
 	</div>
@@ -30,7 +30,7 @@
 				
 	<div class="form-group">
 	  <div class="col-md-12">
-		<button type="submit" class="btn btn-primary">{{ _lang('Update') }}</button>
+		<button type="submit" class="btn btn-primary">بروزرسانی</button>
 	  </div>
 	</div>
 </form>

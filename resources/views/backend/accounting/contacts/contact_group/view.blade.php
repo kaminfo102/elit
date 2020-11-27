@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-md-12">
 	<div class="panel panel-default">
-	<div class="panel-heading">نمایش گروه مشتریان</div>
+	<div class="panel-heading">نمایش گروه مخاطبین</div>
 
 	<div class="panel-body">
 	  <table class="table table-bordered">

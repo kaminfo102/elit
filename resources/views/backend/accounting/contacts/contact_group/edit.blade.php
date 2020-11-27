@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-md-6">
 		<div class="card">
-			<div class="panel-title d-none">بروزرسانی گروه مشتریان</div>
+			<div class="panel-title d-none">بروزرسانی گروه مخاطبین</div>
 
 			<div class="card-body">
 				<form method="post" class="validate" autocomplete="off" action="{{action('ContactGroupController@update', $id)}}" enctype="multipart/form-data">

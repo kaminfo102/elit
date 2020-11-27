@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-12">
 		<div class="card">
-			<span class="d-none panel-title">{{ _lang('Update Email Template') }}</span>
+			<span class="d-none panel-title">ویرایش قالب ایمیل</span>
 
 			<div class="card-body">
 				<form method="post" class="validate" autocomplete="off" action="{{action('CompanyEmailTemplateController@update', $id)}}" enctype="multipart/form-data">
@@ -14,24 +14,24 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="control-label">{{ _lang('Related To') }}</label>						
+								<label class="control-label">مربوط به</label>
 								<select class="form-control auto-select" data-selected="{{ $companyemailtemplate->related_to }}" name="related_to" id="email_template_related_to" required>
-									<option value="invoice">{{ _lang('Invoice') }}</option>
-									<option value="quotation">{{ _lang('Quotation') }}</option>
+									<option value="invoice">فاکتور</option>
+									<option value="quotation">پیش فاکتور</option>
 								</select>
 							</div>
 						</div>
 				
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="control-label">{{ _lang('Name') }}</label>						
+								<label class="control-label">نام</label>
 								<input type="text" class="form-control" name="name" value="{{ $companyemailtemplate->name }}" required>
 							</div>
 						</div>
 
 						<div class="col-md-12">
 							<div class="form-group">
-								<label class="control-label">{{ _lang('Subject') }}</label>						
+								<label class="control-label">موضوع</label>
 								<input type="text" class="form-control" name="subject" value="{{ $companyemailtemplate->subject }}" required>
 							</div>
 						</div>
@@ -43,14 +43,14 @@
 
 						<div class="col-md-12">
 							<div class="form-group">
-								<label class="control-label">{{ _lang('Body') }}</label>						
+								<label class="control-label">متن</label>
 								<textarea class="form-control summernote" name="body">{{ $companyemailtemplate->body }}</textarea>
 							</div>
 						</div>
 					
 						<div class="col-md-12">
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary">{{ _lang('Update') }}</button>
+								<button type="submit" class="btn btn-primary">بروزرسانی</button>
 							</div>
 						</div>
 					</div>

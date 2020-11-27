@@ -214,7 +214,7 @@
 							
 							<div class="col-md-6">
 							  <div class="form-group">
-								<a href="{{ route('accounts.create') }}" data-reload="false" data-title="{{ _lang('Create Account') }}" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
+								<a href="{{ route('accounts.create') }}" data-reload="false" data-title="حساب جدید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
 								<label class="control-label">حساب پیش فرض</label>						
 								<select class="form-control select2-ajax" data-value="id" data-display="account_title" data-table="accounts" data-where="1" name="default_account" required>
 									<option value="">انتخاب کنید</option>
@@ -227,7 +227,7 @@
 							
 							<div class="col-md-6">
 							  <div class="form-group">
-								<a href="{{ route('chart_of_accounts.create') }}" data-reload="false" data-title="{{ _lang('Add Income/Expense Type') }}" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> {{ _lang('Add New') }}</a>
+								<a href="{{ route('chart_of_accounts.create') }}" data-reload="false" data-title="نوع درآمد/مخارج جدید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
 								<label class="control-label">دسته درآمد پیش فرض</label>						
 								<select class="form-control select2-ajax" data-value="id" data-display="name" data-table="chart_of_accounts" data-where="3" name="default_chart_id" required>
 									<option value="">انتخاب کنید</option>
@@ -308,7 +308,7 @@
 											<option value="CAD">دلار کانادا</option>
 											<option value="CZK">کره</option>
 											<option value="DKK">کره</option>
-											<option value="EUR">{{ _lang('Euro') }}</option>
+											<option value="EUR">یورو</option>
 											<option value="HKD">دلار هنگ کنگ</option>
 											
 											<option value="TRY">لیر ترکیه</option>
@@ -349,7 +349,7 @@
 											<option value="CAD">دلار کانادا</option>
 											<option value="CZK">کره</option>
 											<option value="DKK">کره</option>
-											<option value="EUR">{{ _lang('Euro') }}</option>
+											<option value="EUR">یورو</option>
 											<option value="HKD">دلار هنگ کنگ</option>
 											
 											<option value="TRY">لیر ترکیه</option>
@@ -359,14 +359,14 @@
 									
 									<div class="col-md-6">
 									  <div class="form-group">
-										<label class="control-label">{{ _lang('Secret Key') }}</label>						
+										<label class="control-label">کلید امنیتی</label>
 										<input type="text" class="form-control" name="stripe_secret_key" value="{{ get_company_option('stripe_secret_key') }}">
 									  </div>
 									</div>
 									
 									<div class="col-md-6">
 									  <div class="form-group">
-										<label class="control-label">{{ _lang('Publishable Key') }}</label>						
+										<label class="control-label">کلید عمومی</label>
 										<input type="text" class="form-control" name="stripe_publishable_key" value="{{ get_company_option('stripe_publishable_key') }}">
 									  </div>
 									</div>
@@ -374,38 +374,38 @@
                             </div>
 
                             <br>
-							<h5 class="header-title">{{ _lang('Razorpay Configuration') }}</h5>
+							<h5 class="header-title">تنظیمات پرداخت رازور</h5>
 							<div class="params-panel">								
 								<div class="row">
 									<div class="col-md-6">
 									  	<div class="form-group">
-											<label class="control-label">{{ _lang('Razorpay Active') }}</label>						
+											<label class="control-label">فعالسازی رازورپی</label>
 											<select class="form-control" name="razorpay_active" required>
-											   <option value="no" {{ get_company_option('razorpay_active') == 'no' ? 'selected' : '' }}>{{ _lang('No') }}</option>
-											   	<option value="yes" {{ get_company_option('razorpay_active') == 'yes' ? 'selected' : '' }}>{{ _lang('Yes') }}</option>
+											   <option value="no" {{ get_company_option('razorpay_active') == 'no' ? 'selected' : '' }}>خیر</option>
+											   	<option value="yes" {{ get_company_option('razorpay_active') == 'yes' ? 'selected' : '' }}>بله</option>
 											</select>
 									  	</div>
 									</div>
 									
 									<div class="col-md-6">
 									  	<div class="form-group">
-											<label class="control-label">{{ _lang('Razorpay Currency') }}</label>			
+											<label class="control-label">واحد پول رازور</label>
 											<select class="form-control select2 auto-select" data-selected="{{ get_company_option('razorpay_currency') }}" name="razorpay_currency" id="razorpay_currency" required>
-												<option value="INR">{{ _lang('Indian Rupee') }}</option>
+												<option value="INR">روپیه هند</option>
 											</select>
 									  	</div>
 									</div>
 									
 									<div class="col-md-6">
 									  	<div class="form-group">
-											<label class="control-label">{{ _lang('Razorpay Key ID') }}</label>						
+											<label class="control-label">کلید رازور پی</label>
 											<input type="text" class="form-control" name="razorpay_key_id" value="{{ get_company_option('razorpay_key_id') }}">
 									  	</div>
 									</div>
 									
 									<div class="col-md-6">
 									  	<div class="form-group">
-											<label class="control-label">{{ _lang('Razorpay Secret Key') }}</label>						
+											<label class="control-label">کلید امنیتی</label>
 											<input type="text" class="form-control" name="razorpay_secret_key" value="{{ get_company_option('razorpay_secret_key') }}">
 									  	</div>
 									</div>
@@ -413,29 +413,29 @@
                             </div>
 
                             <br>
-							<h5 class="header-title">{{ _lang('Paystack Configuration') }}</h5>
+							<h5 class="header-title">تنظیمات پی استک</h5>
 							<div class="params-panel">								
 								<div class="row">
 									<div class="col-md-6">
 									 	<div class="form-group">
-											<label class="control-label">{{ _lang('Paystack Active') }}</label>						
+											<label class="control-label">فعالسازی پی استک</label>
 											<select class="form-control" name="paystack_active" required>
-											   <option value="no" {{ get_company_option('paystack_active') == 'no' ? 'selected' : '' }}>{{ _lang('No') }}</option>
-											   <option value="yes" {{ get_company_option('paystack_active') == 'yes' ? 'selected' : '' }}>{{ _lang('Yes') }}</option>
+											   <option value="no" {{ get_company_option('paystack_active') == 'no' ? 'selected' : '' }}>خیر</option>
+											   <option value="yes" {{ get_company_option('paystack_active') == 'yes' ? 'selected' : '' }}>بله</option>
 											</select>
 									  	</div>
 									</div>
 
 									<div class="col-md-6">
 									 	 <div class="form-group">
-											<label class="control-label">{{ _lang('Paystack Public Key') }}</label>	
+											<label class="control-label">کلید عمومی</label>
 											<input type="text" class="form-control" name="paystack_public_key" value="{{ get_company_option('paystack_public_key') }}">
 									  	</div>
 									</div>
 									
 									<div class="col-md-6">
 									  	<div class="form-group">
-											<label class="control-label">{{ _lang('Paystack Secret Key') }}</label>		
+											<label class="control-label">کلید امنیتی</label>
 											<input type="text" class="form-control" name="paystack_secret_key" value="{{ get_company_option('paystack_secret_key') }}">
 									  	</div>
 									</div>
@@ -443,11 +443,11 @@
 
 									<div class="col-md-6">
 										<div class="form-group">
-											<label class="control-label">{{ _lang('Paystack Currency') }}</label>
+											<label class="control-label">واحد پول</label>
 											<select class="form-control select2 auto-select" data-selected="{{ get_company_option('paystack_currency','GHS') }}" name="paystack_currency" id="paystack_currency" required>
-												<option value="GHS">{{ _lang('Ghana') }}</option>
-												<option value="NGN">{{ _lang('Nigeria') }}</option>
-												<option value="ZAR">{{ _lang('South Africa') }}</option>
+												<option value="GHS">غنا</option>
+												<option value="NGN">نیجریه</option>
+												<option value="ZAR">آفریقای جنوبی</option>
 											</select>
 										</div>
 									</div>

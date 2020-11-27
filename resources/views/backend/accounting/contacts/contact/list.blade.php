@@ -5,12 +5,12 @@
 
 <div class="row">
 	<div class="col-12">
-	    <a class="btn btn-primary btn-xs" href="{{ route('contacts.create') }}"><i class="ti-plus"></i> مشتری جدید</a>
+	    <a class="btn btn-primary btn-xs" href="{{ route('contacts.create') }}"><i class="ti-plus"></i> مخاطب جدید</a>
 
-	    <a class="btn btn-dark btn-xs" href="{{ route('contacts.import') }}"><i class="ti-import"></i> وارد کردن لیست مشتریان</a>
+	    <a class="btn btn-dark btn-xs" href="{{ route('contacts.import') }}"><i class="ti-import"></i> وارد کردن لیست مخاطبین</a>
 			
 		<div class="card mt-2">
-			<span class="panel-title d-none">لیست مشتریان</span>
+			<span class="panel-title d-none">لیست مخاطبین</span>
 			<div class="card-body">
 			<table id="contacts-table" class="table table-bordered ">
 			<thead>
