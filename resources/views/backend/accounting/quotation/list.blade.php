@@ -10,18 +10,18 @@
 	<div class="col-12">
 	
 		<div class="card mt-2">
-			<span class="d-none panel-title">{{ _lang('Quotation List') }}</span>
+			<span class="d-none panel-title">لیست پیش فاکتورها</span>
 
 			<div class="card-body">
 			  @php $currency = currency() @endphp
 			  <table id="quotation-table" class="table table-bordered">
 				<thead>
 				  <tr>
-					<th>{{ _lang('Quotation Number') }}</th>
-					<th>{{ _lang('Quotation To') }}</th>
-					<th>{{ _lang('Quotation Date') }}</th>
-					<th class="text-right">{{ _lang('Grand Total') }}</th>
-					<th class="text-center">{{ _lang('Action') }}</th>
+					<th>شماره پیش فاکتور</th>
+					<th>پیش فاکتور برای</th>
+					<th>تاریخ</th>
+					<th class="text-right">جمع کل</th>
+					<th class="text-center">عملیات</th>
 				  </tr>
 				</thead>
 				<tbody>
@@ -54,22 +54,22 @@
 			"ordering": false,
 			"language": {
 				"decimal":        "",
-				"emptyTable":     "{{ _lang('No Data Found') }}",
-				"info":           "{{ _lang('Showing') }} _START_ {{ _lang('to') }} _END_ {{ _lang('of') }} _TOTAL_ {{ _lang('Entries') }}",
-				"infoEmpty":      "{{ _lang('Showing 0 To 0 Of 0 Entries') }}",
+				"emptyTable":     "داده ای یافت نشد",
+				"info":           "نمایش _START_  تا _END_  از _TOTAL_  ورودی",
+				"infoEmpty":      "نمایش 0 تا 0 از 0 ورودی",
 				"infoFiltered":   "(filtered from _MAX_ total entries)",
 				"infoPostFix":    "",
 				"thousands":      ",",
-				"lengthMenu":     "{{ _lang('Show') }} _MENU_ {{ _lang('Entries') }}",
-				"loadingRecords": "{{ _lang('Loading...') }}",
-				"processing":     "{{ _lang('Processing...') }}",
-				"search":         "{{ _lang('Search') }}",
-				"zeroRecords":    "{{ _lang('No matching records found') }}",
+				"lengthMenu":     "نمایش _MENU_ ورودی ها",
+				"loadingRecords": "بارگزاری...",
+				"processing":     "پردازش ...",
+				"search":         "جــستجو",
+				"zeroRecords":    "هیچ رکورد مشابهی پیدا نشد",
 				"paginate": {
-					"first":      "{{ _lang('First') }}",
-					"last":       "{{ _lang('Last') }}",
-					"next":       "{{ _lang('Next') }}",
-					"previous":   "{{ _lang('Previous') }}"
+					"first":      "اول",
+					"last":       "آخرین",
+					"next":       "بعدی",
+					"previous":   "قبلی"
 				}
 			} 
         });

@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-12">
 	<div class="card">
-	<div class="d-none panel-title">{{ _lang('Create Purchase Order') }}</div>
+	<div class="d-none panel-title">ایجاد سفارش خرید</div>
 
 	<div class="card-body">
 		  <form method="post" class="validate" autocomplete="off" action="{{ url('purchase_orders') }}" enctype="multipart/form-data">
@@ -13,39 +13,39 @@
 			<div class="row">
 				<div class="col-md-4">
 				  <div class="form-group">
-					<label class="control-label">{{ _lang('Order Date') }}</label>						
+					<label class="control-label">تاریخ سفارش</label>
 					<input type="text" class="form-control datepicker" name="order_date" value="{{ old('order_date') }}" readOnly="true" required>
 				  </div>
 				</div>
 
 				<div class="col-md-4">
 				  <div class="form-group">
-					<a href="{{ route('suppliers.create') }}" data-reload="false" data-title="{{ _lang('Add Supplier') }}" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> {{ _lang('Add New') }}</a>
-					<label class="control-label">{{ _lang('Supplier') }}</label>						
+					<a href="{{ route('suppliers.create') }}" data-reload="false" data-title="تامین کننده جدید" class="ajax-modal-2 select2-add"><i class="ti-plus"></i> جــدید</a>
+					<label class="control-label">تامین کننده</label>
 					<select class="form-control select2-ajax" data-value="id" data-display="supplier_name" data-table="suppliers" data-where="1" name="supplier_id" required>
-						 <option value="">{{ _lang('Select One') }}</option>
+						 <option value="">انتخاب کنید</option>
 					</select>	
 				  </div>
 				</div>
 
 				<div class="col-md-4">
 				  <div class="form-group">
-					<label class="control-label">{{ _lang('Order Status') }}</label>						
+					<label class="control-label">وضعیت سفارش</label>
 					<select class="form-control select2" name="order_status" required>
-					  <option value="1">{{ _lang('Ordered') }}</option>
-					  <option value="2">{{ _lang('Pending') }}</option>
-					  <option value="3">{{ _lang('Received') }}</option>
-					  <option value="4">{{ _lang('Canceled') }}</option>
+					  <option value="1">سفارش داده شده</option>
+					  <option value="2">در انتظار</option>
+					  <option value="3">دریافت شده</option>
+					  <option value="4">لــغو شده</option>
 					</select>
 				  </div>
 				</div>
 
 				<div class="col-md-8">
 					<div class="form-group select-product-container">
-						<a href="{{ route('products.create') }}" data-reload="false" data-title="{{ _lang('Add Product') }}" class="ajax-modal select2-add"><i class="ti-plus"></i> {{ _lang('Add New') }}</a>
-						<label class="control-label">{{ _lang('Select Product') }}</label>						
+						<a href="{{ route('products.create') }}" data-reload="false" data-title="کلای جدید" class="ajax-modal select2-add"><i class="ti-plus"></i> جــدید</a>
+						<label class="control-label">انتخاب کالا</label>
 						<select class="form-control select2-ajax" data-value="id" data-display="item_name" data-table="items" data-where="2" name="product" id="product">
-							 <option value="">{{ _lang('Select Product') }}</option>
+							 <option value="">انتخاب کالا</option>
 						</select>
 					</div>
 				</div>
@@ -53,7 +53,7 @@
 
 				<div class="col-md-4">
 					<div class="form-group">
-					<label class="control-label">{{ _lang('Attachemnt') }}</label>						
+					<label class="control-label">پیوست</label>
 					<input type="file" class="form-control trickycode-file" name="attachemnt">
 					</div>
 				</div>
@@ -65,27 +65,27 @@
 						<table id="order-table" class="table table-bordered">
 								<thead>
 									<tr>
-										<th>{{ _lang('Name') }}</th>
-										<th class="text-center wp-100">{{ _lang('Quantity') }}</th>
-										<th class="text-right">{{ _lang('Unit Cost').' '.$currency }}</th>
-										<th class="text-right wp-100">{{ _lang('Discount').' '.$currency }}</th>
-										<th class="text-right">{{ _lang('Tax method') }}</th>
-										<th class="text-right">{{ _lang('Tax').' '.$currency }}</th>
-										<th class="text-right">{{ _lang('Sub Total').' '.$currency }}</th>
-										<th class="text-center">{{ _lang('Action') }}</th>
+										<th>نام</th>
+										<th class="text-center wp-100">تعداد</th>
+										<th class="text-right">قیمت واحد (ریال)</th>
+										<th class="text-right wp-100">تخفیف (ریال)</th>
+										<th class="text-right">روش مالیات</th>
+										<th class="text-right">مالیات (ریال)</th>
+										<th class="text-right">مجموع (ریال)</th>
+										<th class="text-center">عمــلیات</th>
 									</tr>
 								</thead>
 								<tbody>
 								</tbody>
 								<tfoot class="tfoot active">
 									<tr>
-										<th>{{ _lang('Total') }}</th>
+										<th>مجموع</th>
 										<th class="text-center" id="total-qty">0</th>
 										<th></th>
-										<th class="text-right" id="total-discount">0.00</th>
+										<th class="text-right" id="total-discount">0</th>
 										<th></th>
-										<th class="text-right" id="total-tax">0.00</th>
-										<th class="text-right" id="total">0.00</th>
+										<th class="text-right" id="total-tax">0</th>
+										<th class="text-right" id="total">0</th>
 										<th class="text-center"></th>
 										<input type="hidden" name="product_total" id="product_total" value="0">
 									</tr>
@@ -97,7 +97,7 @@
 
 				<div class="col-md-4 clear">
 				  <div class="form-group">
-					<label class="control-label">{{ _lang('Order Tax')." ".$currency }}</label>						
+					<label class="control-label">مالیات سفارش (ریال)</label>
 					<select class="form-control select2" name="order_tax_id">
 						 <option value="">{{ _lang('No Tax') }}</option>
 						 @foreach(App\Tax::where("company_id",company_id())->get() as $tax)
@@ -110,14 +110,14 @@
 
 				<div class="col-md-4">
 				  <div class="form-group">
-					<label class="control-label">{{ _lang('Order Discount')." ".$currency }}</label>						
+					<label class="control-label">تخفیف سفارش (ریال)</label>
 					<input type="text" class="form-control float-field" name="order_discount" value="{{ old('order_discount',0) }}">
 				  </div>
 				</div>
 
 				<div class="col-md-4">
 				  <div class="form-group">
-					<label class="control-label">{{ _lang('Shipping Cost')." ".$currency }}</label>						
+					<label class="control-label">هزینه حمل و نقل (ریال)</label>
 					<input type="text" class="form-control float-field" name="shipping_cost" value="{{ old('shipping_cost',0) }}">
 				  </div>
 				</div>
@@ -125,7 +125,7 @@
 
 				<div class="col-md-12">
 				  <div class="form-group">
-					<label class="control-label">{{ _lang('Note') }}</label>						
+					<label class="control-label">یادداشــت</label>
 					<textarea class="form-control" name="note">{{ old('note') }}</textarea>
 				  </div>
 				</div>
@@ -133,7 +133,7 @@
 				
 				<div class="col-md-12">
 				  <div class="form-group">
-					  <button type="submit" class="btn btn-primary">{{ _lang('Save') }}</button>
+					  <button type="submit" class="btn btn-primary">ذخیره</button>
 				  </div>
 				</div>
 			</div>
@@ -207,7 +207,7 @@
 
 					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label">{{ _lang('Description') }}</label>						
+							<label class="control-label">توضیحات</label>
 							<textarea class="form-control" id="modal-description">${c_description}</textarea>
 						</div>
 					</div>
